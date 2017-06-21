@@ -1,0 +1,51 @@
+Tested on a Linux system with OCaml version 3.09.3
+but it should run with any reasonably recent OCaml version.
+Not tested on other operating systems.
+
+Type "make" which should produce an executable "pltl".
+
+The executable "pltl" accepts formulae on the standard input
+and tests them for satisfiability.
+It requires an argument which must be either "graph" or "tree".
+This argument determines whether the graph-based
+or the tree-based decision procedure is invoked on the formulae.
+If any second argument is given then the prover is more verbose.
+
+Formulae must be separated by line feeds.
+Lines containing only white spaces are ignored.
+The end of the input is indicated as usual by EOF.
+
+
+PLTL formulae have the following form:
+
+f == f1 '<=>' f2 
+     f1 '=>' f2
+     f1 '|' f2
+     f1 '&' f2
+     f1 'U' f2 | f1 'B' f2
+     'X' f1 | 'F' f1 | 'G' f1 | '~' f1 | '(' f1 ')' | ident | True | False
+
+ident == identifiers only containing { A-Z, a-z, 0-9, _, ' }
+         and not starting with a number
+
+The precedence of the connectives are as indicated in the grammar
+(i.e. '<=>' binds loosest). All connectives of the same precedence
+are right associative. Use parenthesis if in doubt.
+
+Example: "X~p U G F p' B q0" is parsed as "(X (~(p))) U ((G (F (p'))) B (q0))";
+
+PLTL formulae are case sensitive and spaces are sometimes required.
+
+Note that the choice of characters which are allowed in identifiers
+is somewhat arbitrary but should be sufficient for most cases.
+
+
+Examples of usage (on the command line):
+
+>> echo "~( p U q => F q )" | ./pltl graph
+
+>> cat formulae.txt | ./pltl tree beverbose
+(where formulae.txt contains at most one formula per line)
+
+>> ./pltl graph blahl
+(and then type in formulae interactively; terminate by EOF)

@@ -1,0 +1,1 @@
+forall p. forall q. G (~ (select0_p <-> select0_q) & ~ (select0_p <-> select0_q) & (pause_p <-> pause_q)) -> G(bakery00_p <-> bakery10_q & bakery00_q <-> bakery10_p & bakery01_p <-> bakery11_q & bakery01_q <-> bakery11_p & bakery02_p <-> bakery12_q & bakery02_q <-> bakery12_p & bakery03_p <-> bakery13_q & bakery03_q <-> bakery13_p)

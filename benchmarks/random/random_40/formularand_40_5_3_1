@@ -1,0 +1,500 @@
+exists ppp.exists pp.exists p.forall q.(F(aaaaa_q)) => ((X((~(X(aa_ppp))) & (X((aaaaa_pp) U (G(aaaa_q)))))) W (((aaa_q) R ((G((aa_p) U (aaaaa_q))) U (aaa_q))) | (X(((~(aaa_p)) <=> (~(X((aaa_q) <=> ((a_q) & (aaa_q)))))) => (G((aaa_p) | (F(a_ppp))))))))
+
+exists ppp.exists pp.exists p.forall q.(F(((X((G(aaa_q)) & (~((G(aaa_p)) W (aaa_q))))) => (G(aaaa_q))) W (G((a_pp) R ((((aa_ppp) <=> (aaaa_ppp)) => ((aaaa_pp) => (G(aaaa_pp)))) | ((X(aa_p)) R (aaaaa_q))))))) U (((~(aa_q)) & (aaaa_ppp)) => (~(aaaaa_p)))
+
+exists ppp.exists pp.exists p.forall q.((~(((aaa_p) & (X(aa_pp))) U (X(aaaa_q)))) & (X(X(F(G((a_p) <=> (X(a_q))))))) & (X(((a_p) R ((aaaa_pp) => (~(aa_q)))) W (((a_ppp) | (aaaa_q)) => (a_ppp))))) <=> (X(~((aaaa_ppp) R ((aaa_q) <=> (F(aaaaa_pp))))))
+
+exists ppp.exists pp.exists p.forall q.((X(((a_pp) | (aaaaa_p)) R (aaa_q))) | ((F(G((aaaa_q) U (F(aaa_q))))) => (F((aaa_pp) | (aaaa_q) | (((X(aaa_pp)) W ((aa_q) & (aaaaa_q))) R (G(a_ppp))))))) => ((aaaaa_p) | (((aaa_q) R (aaaa_ppp)) <=> (X(F(a_pp)))))
+
+exists ppp.exists pp.exists p.forall q.(F((~(aaaa_pp)) R ((aaaa_q) W (((a_q) & ((aa_q) <=> ((aa_q) => (a_q)))) U (aaaaa_q))))) & (((X(aaaa_ppp)) W ((~(F(a_ppp))) | (F(aaa_pp)))) | (~((X(a_q)) & (X(X((~(aa_q)) | (X(F(a_q)))))))))
+
+exists ppp.exists pp.exists p.forall q.X(((aaaa_p) W (X(a_ppp))) U (G(~((aaaa_pp) <=> (G(F(((~(aa_ppp)) R ((G(a_q)) U (aaaaa_ppp))) | (~(((~(aaaaa_q)) => (aaaa_pp)) | (~((F((a_pp) W (aaaaa_q))) & (X((aaaa_p) | (G((aaa_q) <=> (aaaa_p))))))))))))))))
+
+exists ppp.exists pp.exists p.forall q.G(((F((~(aaaaa_q)) => ((aaaa_ppp) U ((a_q) W (X((X(a_q)) => (a_q))))))) => (aa_q)) => ((aaa_pp) & (~((aaaaa_q) W (F(a_q))))))
+
+exists ppp.exists pp.exists p.forall q.((a_q) | (G(~((aaa_q) | ((aaaa_q) => (a_pp)))))) U (~((((G(a_p)) R (X(a_ppp))) => (F(X(F(aaaa_pp))))) <=> (F((~(F((G(~(X((aa_q) R (aaa_q))))) <=> ((aaaaa_ppp) | ((aaaaa_pp) & (X(aaa_ppp))))))) => (aa_q)))))
+
+exists ppp.exists pp.exists p.forall q.((aaa_q) | (((aaa_pp) U ((X((G(F((G((aaaa_q) => (aaaaa_q))) | ((~((aaa_q) | (G(aaaaa_q)))) R (X(X(a_q))))))) W (aaaaa_q))) R (G(X(aaaa_q))))) W (((aaaa_p) U (G(aaaa_pp))) W (~(aaaa_q))))) R (G(a_p))
+
+exists ppp.exists pp.exists p.forall q.X((F((aa_q) W (G(((aaa_ppp) & ((a_q) W (aaa_q))) W (G((aaaaa_q) W ((G(X(aaaaa_ppp))) U (aa_ppp)))))))) | ((aaaaa_pp) => (((aaaaa_q) | (G(aaaa_pp))) <=> ((aaa_q) | (G((G(aa_q)) W (aaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.X(((aaaaa_q) | (G(F(aa_q)))) => (~(X(~((((X(aaaa_q)) & (X(aaa_q))) R (aaa_p)) W (((G(aaaaa_ppp)) & (X(G(aa_pp)))) R (((a_pp) W (~((aaaaa_q) W (G(aaa_q))))) => ((aaaaa_q) => (((a_q) R (aaaaa_pp)) => (aa_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.~((((~(aa_q)) U (a_pp)) & (G((aaaaa_ppp) <=> (X(aaaa_q))))) => (~((~(F(aaa_ppp))) U ((a_ppp) | (~(((a_q) | (~(aaaaa_q))) U (~(aaaaa_pp)))) | ((aaaaa_p) <=> (G(a_ppp))) | (~(X(~((~(aaaa_q)) & (aaaaa_pp)))))))))
+
+exists ppp.exists pp.exists p.forall q.(G((aaaa_q) U ((G(aaaa_q)) <=> ((aa_pp) | ((F(G(a_q))) R (G(aaa_q))))))) | ((X(((aaa_q) U (aaaa_ppp)) W (((aaaaa_pp) W (aaaa_ppp)) & (G(X(X(F(a_q)))))))) U ((F(a_p)) U ((F(a_p)) => (G(a_pp)))))
+
+exists ppp.exists pp.exists p.forall q.~(((((aa_ppp) <=> (F(aaa_q))) W (~(F(~(X((a_pp) | ((~(aa_q)) W (F(X(((aa_q) => (aaaa_q)) W (X((aa_q) | (aaaaa_q))))))))))))) W ((F(aaaaa_p)) U (aaaa_q))) W ((aaaaa_ppp) => (((~(aaaa_p)) U (aaaaa_q)) U (aa_q))))
+
+exists ppp.exists pp.exists p.forall q.((aa_ppp) => (~(aaaaa_q))) | (X(((~((G((aaaa_q) => (F(aaaaa_q)))) <=> (X(aa_q)))) | ((((aa_q) | (aaaaa_q)) => ((aaa_q) => (aa_pp))) U (X(((~(aaa_p)) <=> (aaaa_pp)) R (G((aa_q) <=> ((aaaaa_p) U (a_q)))))))) R ((aaaa_p) & (aaaaa_ppp))))
+
+exists ppp.exists pp.exists p.forall q.~(((~(aaa_q)) | ((aa_ppp) & ((aaaa_pp) W (G(F(aaa_ppp)))))) => (F((G((aaaaa_ppp) | (G(aa_q)))) | (((aaa_pp) => (aaaaa_q)) => (F(aaaa_q))) | (~((X((G(aa_ppp)) R (X(a_q)))) & (X(((aaaa_q) | (aaaaa_q)) => (aa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.F((F(((~(G(F(((aa_p) W (aaaaa_q)) => (~(F(aaa_q))))))) W ((((aa_q) | (G(aaaa_ppp))) & ((X(aaa_q)) => (F(aa_q)))) W ((X(aaa_pp)) U (aa_q)))) | ((G(aa_q)) => (aa_pp)))) => ((~(aa_ppp)) => (aaaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.True
+
+exists ppp.exists pp.exists p.forall q.(~(X(~(((aaa_q) U (G((aaaaa_pp) W ((aaa_q) & (F(aaaaa_p)))))) W ((G(aaaa_q)) U ((G(aaaaa_pp)) | ((G(aaaaa_ppp)) W (F(aaaaa_q))))))))) W ((F((aaa_p) => (a_q))) R ((~(a_p)) <=> (X(((aaaaa_q) W (~(aaa_q))) => (aaaaa_ppp)))))
+
+exists ppp.exists pp.exists p.forall q.(~(a_p)) R ((G((~(F((G(aaaaa_q)) & (F(G(a_ppp)))))) => (F((((aaaaa_q) & (F(a_ppp))) W (~(a_q))) | (((X(aa_pp)) | ((aaa_q) R (a_p))) R (X(aaaaa_pp))))))) & ((~(aaaa_q)) => ((F(aaaaa_ppp)) | (G(aaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.F((X((F(aaaa_ppp)) U (G(X((F(aaaa_ppp)) W (aa_q)))))) | (((aaaaa_q) | (F(a_ppp))) R ((((aaaaa_q) U (aa_p)) U (aa_q)) R (aaa_q))) | ((F(X(aaa_q))) W (~(X(G((F(a_q)) & (G(aaaaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.((G((aa_q) U (F(G((aa_q) => (F(aaaa_q))))))) => ((((F(a_pp)) R ((F(G(aaaa_pp))) U (aaaaa_pp))) <=> (F(X(~((aaa_q) R ((aaaa_q) U (a_ppp))))))) U (aa_q))) <=> (~(F((F(aaaaa_q)) | (X((a_q) | (aa_p))))))
+
+exists ppp.exists pp.exists p.forall q.F(((F((aa_p) R (a_q))) W (X(~(aaaa_q)))) R (((aaaaa_p) => (G(aaaaa_q))) U ((F(((G(~((aaa_ppp) U ((aaa_q) <=> (aaaaa_ppp))))) R (~(aaaaa_p))) R ((aa_p) & (aaaa_p)))) <=> ((aaa_pp) & ((aaaaa_q) | (X(a_ppp)))))))
+
+exists ppp.exists pp.exists p.forall q.(X(~((X((((a_pp) R (F((aa_q) & ((aaaaa_q) R (aaa_q))))) W (G((aaaa_q) W (aaa_q)))) & ((aa_q) U (aaaa_ppp)))) U (((a_ppp) | (aaaa_p)) U (a_pp))))) & ((~((a_q) & (aaa_p))) U ((~(G(~(aaaaa_q)))) U (a_ppp)))
+
+exists ppp.exists pp.exists p.forall q.X(((F(aaa_pp)) | (((F(X((aa_pp) | (aaaaa_q)))) W (aaa_q)) & (F((aaaa_q) U (~((aaa_q) R (aaaa_q))))))) R (~(G((G((aaa_q) & (F(G(a_q))))) R (((aaaaa_q) => (X(X(a_pp)))) U ((aaa_p) & (aaaa_p)))))))
+
+exists ppp.exists pp.exists p.forall q.(((aa_q) | (X(X(((aaaa_ppp) <=> ((aa_ppp) W (aaa_q))) U (G(F(a_ppp))))))) W (X(aaaaa_q))) => (((aaa_ppp) U (X(G(aa_ppp)))) <=> (F((X(G((aa_q) & (aaaaa_ppp)))) | (F(aaa_p)))))
+
+exists ppp.exists pp.exists p.forall q.(G(((aaaa_q) U (aaaaa_pp)) U (G(((G((G(aaaa_q)) U (aaa_q))) | (F((aa_q) W (((aa_q) <=> (F(aa_ppp))) R ((a_pp) & (F(a_q))))))) U (aaaaa_q))))) W ((((aa_q) | (aaaa_q)) => (~(aaa_q))) W ((aaa_q) & (~(aaaaa_pp))))
+
+exists ppp.exists pp.exists p.forall q.(X(((aa_q) R (a_q)) W ((aaa_p) W (X(aaaaa_q))))) => (((((aaa_q) <=> ((~(aaa_p)) | (X(a_q)))) & (G(F((~(aa_q)) => (aaaaa_ppp))))) W (aaaaa_q)) U ((G(a_pp)) & ((~(aaaaa_pp)) U (((a_q) W (F(aaaa_q))) W (F(a_q))))))
+
+exists ppp.exists pp.exists p.forall q.((a_pp) & (aaaa_ppp) & (~(aaaa_ppp))) R ((~(((aaaa_q) <=> ((a_q) R (~(aa_q)))) U ((a_p) & (X((F(aa_q)) U (G(aaaa_pp))))))) | (((aaaa_p) W (F(aaaaa_q))) <=> (X((a_pp) <=> ((a_q) <=> (G((aaaa_q) R (a_p))))))))
+
+exists ppp.exists pp.exists p.forall q.X((((a_p) <=> ((((aa_q) <=> (aaaa_q)) => (a_ppp)) W (((aa_q) & (aaaa_ppp)) <=> ((aaaa_p) U (aaaaa_q))))) W (X(G(((aaaaa_p) R (aa_q)) & (G(aaaa_q)))))) <=> (G((((aa_q) <=> (F(aa_q))) => (~(G((a_q) W (~(aaaa_q)))))) => (aa_p))))
+
+exists ppp.exists pp.exists p.forall q.~(F(X(((aaaaa_q) | ((aaa_q) <=> ((a_q) | (aaa_q)))) <=> (~(G(((F((aaaaa_pp) | ((G(X(~(aaa_ppp)))) U (F(aaaa_p))))) R (((aaaa_q) | (G((aaaa_ppp) R (F(aa_q))))) R (F(aaaaa_q)))) W ((aaaaa_ppp) U (aaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.X(((((F(a_q)) R ((a_ppp) W ((~(aaaaa_pp)) R (F(aaaa_pp))))) R ((~(aa_q)) | (G(~(aaaa_ppp))))) R (G((G((G(~(aaaaa_q))) R (F(a_q)))) W (X(aa_pp))))) | ((a_q) W (X(F(~(aaaaa_ppp))))))
+
+exists ppp.exists pp.exists p.forall q.F(~((F(~((X(aa_q)) => ((aaaaa_pp) R ((aaa_q) W (aa_p)))))) W (G((F((G((G(aa_p)) R (F(aa_pp)))) => (G(aaa_q)))) <=> ((G((a_q) W (F(a_q)))) U ((G(F(G(aa_pp)))) W ((aa_q) R (aaaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.~(((aa_ppp) | (aaaaa_p) | ((~(aaa_p)) <=> (G(aaaaa_q)))) <=> (F(((a_p) & (F(aa_ppp))) <=> (X((((aaaa_q) U (a_q)) R (((a_q) | (aaa_q)) U (~(aaaaa_ppp)))) W ((~(G(aaaa_p))) U (~(aaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.F(~((G((X((~(aa_q)) W (~(a_q)))) <=> ((((aaaaa_ppp) => (~(aa_ppp))) W (~((aa_q) R (aaa_q)))) & (F(aa_pp))))) => (G(~(G((F(~(aaaa_pp))) U (X(~(((aaa_q) U ((aa_pp) W (aaaaa_q))) U (aaaa_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.~((F(aaaa_p)) & (G((F(aa_ppp)) R ((((~(aaa_q)) <=> (~(aaaaa_q))) => (aaaa_pp)) => ((aa_q) <=> (X(((a_ppp) U (aaaa_pp)) => (X(a_p)))))))) & (G(((G((a_p) | (G(aaaa_p)))) R (F(aaa_ppp))) <=> (G((a_ppp) & (aaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.True
+
+exists ppp.exists pp.exists p.forall q.G(F((~(F(~((~((a_ppp) & (aa_q) & (G(aaaa_ppp)))) => (((G(aaaaa_ppp)) & (X(aaa_ppp))) W (X(F((G(X(aaaa_pp))) U ((a_p) <=> (X(aaaa_q))))))))))) | (~((X(a_p)) & ((a_ppp) | ((X(aaaaa_pp)) U (aaa_pp)))))))
+
+exists ppp.exists pp.exists p.forall q.(X((a_pp) & (X(a_pp)))) W ((((F(((aa_ppp) => (aaaa_ppp)) <=> (G(aaaaa_pp)))) & (G(aa_p))) R (X(X(G((a_pp) | (F(aaaa_q))))))) U ((aaaaa_ppp) | (X((~(a_q)) | (aaaa_ppp))) | ((X(aa_pp)) => ((a_q) & (aaaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.F(((X((aa_q) <=> (X(aaa_ppp)))) & ((a_q) <=> (G(aaaaa_p)))) => (((F(G(aaaaa_ppp))) => (~(aaa_q))) & ((aaa_q) <=> ((~(aaaaa_pp)) W (F(aaaaa_q)))) & (((a_ppp) <=> (F(G((~(aaa_ppp)) <=> (aaaaa_ppp))))) W (aaaaa_p))))
+
+exists ppp.exists pp.exists p.forall q.(X(X((aaa_pp) & (aaaaa_q)))) & ((G(~(G(((X(X(X(~(aaaa_q))))) W (F(((aa_ppp) => (aaaa_q)) <=> (G((aaaa_q) W (X(a_q))))))) | ((aaaaa_ppp) => ((aaa_q) R (aaaa_pp))))))) U (X((aa_q) U (~((aa_pp) & (F(aaaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.F((F(X(G((((G(aa_q)) R (X((aa_q) | (aaaa_ppp)))) | (F((aa_q) <=> ((aaa_q) & (aaaaa_p))))) => (~(((aa_q) U (aaaaa_q)) W (X((~(aaaa_pp)) <=> (F(aaaaa_ppp)))))))))) U ((aaaaa_ppp) & (~(X(F(aaaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.((aa_p) R (G((G(((aaaa_q) | (~(aaaaa_p)) | ((a_ppp) & ((G(aaaaa_pp)) => (aaaaa_q)))) => (aa_p))) => (~((aaaaa_ppp) => (G((a_q) & (aa_q) & (aaaaa_q) & (G(F(aaaaa_pp)))))))))) => ((aaaaa_ppp) <=> (X((aa_q) => (aaa_q))))
+
+exists ppp.exists pp.exists p.forall q.(aaaaa_pp) <=> (~((F(((aaa_pp) R (aaaa_p)) & ((F(aaaaa_p)) <=> (~((G((a_pp) | (aaaa_q))) => (aaa_q)))))) | (((aaa_q) => ((G(aa_p)) U (aaaa_q))) => (((G((G(aaaa_pp)) W (~(F(aa_pp))))) U (aa_p)) R (G((aaa_q) R (aa_pp)))))))
+
+exists ppp.exists pp.exists p.forall q.(((a_p) => (((~(aaaa_pp)) & (aaaaa_q)) W (aaaa_q))) R (((aaa_pp) & ((G((aa_q) <=> (aaaaa_q))) <=> ((((a_q) U (aa_q)) R (a_q)) <=> ((aaaa_ppp) & (G(aaaa_q)))))) | (~(F(aa_ppp))))) | ((F(aaaa_p)) R (X((a_q) <=> (aa_q))))
+
+exists ppp.exists pp.exists p.forall q.(((aa_q) U (aaaaa_q)) <=> (((aaaa_pp) => (aaaaa_q)) W ((aaa_p) <=> (G(aa_p))))) | (X(G(((aaa_pp) | (~(F(aaa_p)))) U (aaa_q)))) | (F(~(F(aaa_q)))) | ((G(a_ppp)) R (aaaaa_p))
+
+exists ppp.exists pp.exists p.forall q.(G(((~(aaaa_q)) | (X(aaa_pp))) U (~((G(a_q)) R (aaaaa_pp))))) & (((F((aaaaa_q) | ((a_q) R (((aa_p) U (aaa_ppp)) U ((aa_q) | (aaaaa_p)))))) U ((a_q) | (aaa_q))) W ((a_q) & ((a_ppp) <=> ((G(aa_q)) => (G(aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.G(~(G(((aaa_p) <=> (X(((a_q) W (F(a_q))) R (F((a_p) <=> (((X(X(G(aa_q)))) & (X(F(aaa_q)))) W (F(((aaa_q) <=> (G(aaaa_q))) & ((F(aaaa_q)) R (aaaaa_q)))))))))) U (aaaaa_pp))))
+
+exists ppp.exists pp.exists p.forall q.F((G(((a_q) | (F((G(a_p)) <=> (F(aaa_p))))) & (X((G((aaaaa_q) => (aaaa_q))) W (aaaa_pp))) & (F(((a_q) | (aaaaa_q)) & ((X(G(aaa_q))) U (aa_q)))))) => (((X(aaaaa_q)) U (aaaa_q)) & (G(~(F(aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.(G(F(((G(X(aa_ppp))) R (a_q)) R (((X(F(aaaa_ppp))) W (a_q)) <=> (((aa_p) R (aaaaa_q)) => (X(aaaaa_q))))))) | (X(F((((~((aaa_ppp) <=> (F(aaaa_q)))) W (aaa_p)) | ((G(aa_pp)) & ((aaaa_q) | (G(aa_q))))) => (aaaaa_q))))
+
+exists ppp.exists pp.exists p.forall q.((((aaaaa_pp) => (((aaa_ppp) R (aaaaa_q)) R ((aa_q) => (~(aa_ppp))))) <=> ((aa_q) U (~(aaaa_p)))) & (X((aaaaa_q) => (aaa_p)))) U (((aa_p) <=> ((aa_q) => (G(aaaa_q)))) | ((aa_pp) & ((~((aaaaa_q) <=> ((a_pp) R (aaa_pp)))) U (a_p))))
+
+exists ppp.exists pp.exists p.forall q.(((X(G(F((X(aaaa_p)) W (aaa_ppp))))) R (X(X((~(aaa_pp)) & (~(F((a_ppp) & (F(aaa_q))))))))) | ((a_q) U (aaaa_ppp))) R (((aa_q) <=> (aaa_p)) | (X(G(~((~(F(aaaa_ppp))) W ((aaaa_q) <=> (aaaaa_pp)))))))
+
+exists ppp.exists pp.exists p.forall q.((~((X(X((aa_q) R (a_pp)))) W (aaa_q))) W ((aaaaa_ppp) | (G(aa_q)))) & (F((F(G((F((F(aaaaa_q)) U (a_q))) R (aaa_q)))) & (X(X(~(G((aaaa_q) <=> (~(F(a_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.((((F(aaa_q)) & (X(a_q))) U ((aa_q) W ((a_q) => (aaaaa_pp)))) <=> ((aaaaa_pp) U (aa_p))) U ((((X(a_pp)) W (X(aaa_p))) W ((F(aaa_q)) => ((aaaa_ppp) | ((aa_p) & (aaaa_pp)) | (X(F(aaaa_q)))))) R (~((~(aa_p)) | (aaa_q))))
+
+exists ppp.exists pp.exists p.forall q.(G((F((X(F(((aa_p) U (X(aaaa_p))) W ((aaa_ppp) U (aaaaa_q))))) R (a_q))) W ((F(aa_q)) W (X((aaa_ppp) W (aa_q)))))) <=> ((~(aaa_q)) & (F(aaaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.((X(F((((F(aa_pp)) U (aa_pp)) W (F(aaaaa_q))) & ((aaaa_q) <=> ((G(aaa_ppp)) R ((aaa_q) W (aa_q))))))) U ((G(aaaa_p)) R (aaa_q))) | (G((aaa_pp) => ((aa_p) => ((((aa_ppp) R (aaa_q)) W (aaaa_p)) => ((a_q) <=> (aa_q))))))
+
+exists ppp.exists pp.exists p.forall q.((((aa_q) & ((F(a_q)) U (aaa_q))) | (G(a_pp))) U ((F(((~(aaaaa_p)) U (aa_p)) U (aaa_q))) <=> (X(((a_q) W (aaaaa_q)) R (~(X(aaa_p))))))) <=> (F(((aaa_ppp) | (aaaaa_ppp)) & ((~(F(aaa_q))) W (X(aaaa_p)))))
+
+exists ppp.exists pp.exists p.forall q.(F((X(aaa_ppp)) => (aaaa_pp))) W (((a_ppp) <=> (~(((~(aa_ppp)) U ((a_ppp) U (~(aaaa_q)))) <=> (((aa_p) | (F(a_ppp))) R (aaaa_q))))) <=> (((G(a_q)) W (aaa_ppp)) | ((F(aa_p)) => (X((a_q) U (((aaaaa_q) R (a_p)) R (aaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.(F(G(F(((F(aaaaa_p)) & ((aaa_q) U (aaaa_q))) | ((X((~((aaaa_ppp) W (aa_q))) <=> ((F(aaaaa_p)) R ((a_q) | (F(aaaa_q)))))) U ((~(a_ppp)) | (aa_pp) | (aaaaa_p))))))) => (G((aaaaa_p) R (X(~(aa_ppp)))))
+
+exists ppp.exists pp.exists p.forall q.((X((~(aaaaa_q)) <=> ((aaaa_q) | (F(X(aaaa_q)))))) <=> (((F(aaa_p)) <=> (~((aa_q) W ((aaa_q) U (aaaa_q))))) R ((aaaa_ppp) <=> ((~(a_q)) | (F(aaa_p)))))) W ((((G(aaaaa_pp)) => (G(X(aaa_p)))) U (X(aaaaa_q))) R (aaaa_q))
+
+exists ppp.exists pp.exists p.forall q.(((aaaaa_ppp) & ((aaaaa_q) R ((aaaa_ppp) U (G((aa_q) <=> (G(aaaa_p))))))) <=> (F(X(G(((a_ppp) <=> (X((G(aaaaa_q)) R (aaaa_pp)))) => (F((F(aaaaa_p)) & ((aaaa_q) W (aaaaa_q))))))))) <=> (G((a_p) => (((a_ppp) U (aa_q)) U (X(aaaaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.(((F(a_ppp)) <=> (((aaa_p) U (F(aa_ppp))) => (F(~(F((aaaa_q) | ((X(aaaaa_pp)) R ((aa_q) R (F(a_q)))))))))) U (F(aaaa_q))) => (((aaaaa_q) | (G(aa_q))) W ((X(((aaaaa_q) => (a_q)) & (X(aaaa_pp)))) R (X(F(aaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.(((~((X(aaaa_ppp)) U (~(aaaa_p)))) U ((~(aaaa_q)) W (a_p))) R (aaa_pp)) <=> (G((aa_q) U ((aa_q) <=> ((((aa_ppp) R (a_q)) W ((~(aa_p)) | (aaa_p))) W (G((~(aaa_pp)) & ((aaaa_pp) => (~(aa_ppp)))))))))
+
+exists ppp.exists pp.exists p.forall q.(F(a_q)) => (((((a_p) => (aaaaa_ppp)) => (X(a_pp))) W (a_p)) U (((aa_pp) & ((G(aaa_pp)) => (aa_q))) => ((aaa_pp) & (((aaaaa_q) U (G(aaaa_pp))) U ((F((aa_q) U (G(aa_ppp)))) U (G(F(G(((a_p) => (aaaa_ppp)) => (aaaaa_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.F((X(((~(X(a_q))) & ((a_pp) => ((G(aaa_ppp)) W (aaaaa_pp)))) <=> (F(G((~(aa_q)) <=> (aaaaa_ppp)))))) W ((((a_ppp) | (aaaa_p) | (X(aaaa_q))) W ((aaaa_q) U (aa_ppp))) & (G(aa_p)) & ((G(aaaaa_q)) => (aaaa_q))))
+
+exists ppp.exists pp.exists p.forall q.~(G((G((~((a_pp) <=> (aa_q))) U (~(aa_q)))) => ((G((~(X(X(aaaa_p)))) => ((aaa_q) W ((X(aa_pp)) => (~(aaaaa_ppp)))))) | (((G(aaa_ppp)) => (((aaaaa_pp) W (aaaa_ppp)) | (G(aa_q)))) W ((X(aaaa_q)) W (a_q))))))
+
+exists ppp.exists pp.exists p.forall q.(aa_q) & ((aaaa_ppp) => (~(aaa_ppp))) & (~(X(a_q))) & (G((aaaaa_q) => (X(((aaaaa_q) <=> ((G(aaa_pp)) W (aaaaa_q))) U (~(((a_ppp) <=> (aaa_q)) | ((aa_pp) & (aaa_ppp) & (((aaaaa_q) <=> ((aa_q) W (aaaa_q))) R (aaaa_q)))))))))
+
+exists ppp.exists pp.exists p.forall q.(~((G(~(aaa_q))) U (((aa_q) <=> (F(aaaa_q))) <=> (((~((aa_pp) <=> (aaaa_q))) W ((aaaa_q) R (F(G(aaaa_q))))) => (a_q))))) & ((X((aa_p) & (F(aaa_p)))) | ((((~(aaaa_pp)) W (aaaaa_pp)) R (a_pp)) U (G(X(aaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.((X(aa_q)) U ((aa_pp) <=> (F(a_q)))) => (F((((aa_q) | (G(X(aaaaa_p)))) => (F(G(~(F((aaaa_q) U (aa_q))))))) & (((aa_ppp) | (X((G(aa_pp)) W (a_p)))) U (X(a_q))) & ((aaaa_q) | (G(aaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.(((F(aaaa_q)) => (G((X(aa_p)) & (F(aaaaa_q))))) R (((aa_ppp) <=> (~((G(aaa_p)) | (X(aa_q)) | ((G((a_ppp) U ((aaaa_p) <=> ((aa_q) <=> (X(aaa_pp)))))) W (G(aaa_pp)))))) W (X(aaaa_q)))) R (~(aaaa_q))
+
+exists ppp.exists pp.exists p.forall q.(X((aa_q) <=> (aaaa_q))) | (~(((((X(aaaa_pp)) R ((G(a_q)) & (F(((a_q) | (aaaa_q)) U (a_ppp))) & (X(aa_q)))) U (G((aaaa_q) <=> (G(aaaaa_pp))))) W ((G(aaaa_q)) U (X(aaaa_q)))) <=> ((G(aa_pp)) W ((aa_ppp) R (aaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.(~((aaa_ppp) W ((aaa_q) R (a_ppp)))) => (~(G((~(F((G(a_pp)) <=> ((aaa_p) | ((G(aaaa_p)) U (X((a_p) & (aa_pp)))))))) W ((~((F(aaaa_p)) R (G(X(F(aa_q)))))) W ((aaa_pp) & (((aa_pp) & (aaaaa_q)) R (a_p)))))))
+
+exists ppp.exists pp.exists p.forall q.(((F(~(((aaaa_p) R (a_ppp)) <=> ((aaaaa_p) U (G(aaaaa_q)))))) W ((aaa_pp) => (aa_p))) <=> ((((aaa_q) U (a_p)) W ((a_p) & (G(aaaa_pp)))) => (G((aa_q) & (aaaaa_q))))) => ((X(a_p)) W ((~(aa_q)) <=> ((aa_q) R (aaa_ppp))))
+
+exists ppp.exists pp.exists p.forall q.X((((aaaaa_q) <=> (~(X(G(a_p))))) W (((G(~(G((aa_p) | ((~(X(~(aaa_q)))) <=> (X(aa_p))))))) R (aa_q)) U ((aaaaa_p) | (X(aaaaa_pp))))) | (~(F((aaa_q) U (F((aaaa_q) R (aaaaa_pp)))))))
+
+exists ppp.exists pp.exists p.forall q.(~(((~(aaaa_q)) <=> ((a_q) <=> (aa_q))) <=> ((~((aaaa_q) & (~(G(a_q))))) R (a_pp)))) W (G((((X((aaaa_q) | (G(aaa_q)))) W (G(F(aa_q)))) & (X(aaaa_pp))) U (((aaa_q) R (aaaaa_ppp)) | (F(X((aaa_ppp) U (a_q)))))))
+
+exists ppp.exists pp.exists p.forall q.((~((aaaa_q) & ((a_p) | (aaaa_p)))) | (((F((aaaaa_ppp) <=> (F(aaaaa_q)))) & ((aaaaa_ppp) | ((a_ppp) U (G(a_p))))) U (F(aaa_ppp)))) => ((~(aa_q)) & (X((F(X(G(aaaa_q)))) => (~(X((X(a_q)) W (a_q)))))))
+
+exists ppp.exists pp.exists p.forall q.F(~(((((F(aaaaa_ppp)) => (aaaaa_ppp)) U (X(aaa_pp))) & (G(((aa_p) W (a_ppp)) U (aaa_ppp)))) U (((aa_q) <=> (((aaaaa_p) W (a_q)) U ((aaaa_q) | (G(aaa_q))))) => (((a_p) U (F(aaa_q))) R ((aaaaa_q) R (aa_p))))))
+
+exists ppp.exists pp.exists p.forall q.F(((G(F(aaaa_p))) => ((~(aaa_q)) | ((G(~(aa_ppp))) R (aa_pp)))) U (F((G((F((F(G(aa_pp))) U ((aaaa_ppp) U (aa_q)))) | (F(G(F(~(aaaa_q))))))) U ((X(aaaa_q)) R (X(aa_pp))))))
+
+exists ppp.exists pp.exists p.forall q.((aa_q) W (X((~((~(a_q)) & (aaaa_q))) R (~(X((G((~(aaaa_q)) & (~(X(a_q))))) & (F((a_q) & (G(X(a_pp))))))))))) U (((G(aaaa_ppp)) R ((aa_q) & (aaa_pp))) & (F((aaaaa_p) R ((aa_q) U (aaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.~(X(G(~(G((~(((~(aaaa_ppp)) W (~(F((X(a_p)) | ((aaaa_p) U (aaaaa_ppp)))))) U (X(aaa_q)))) W (G((aa_q) R ((G(a_pp)) => ((X((aaaaa_q) => (G(a_q)))) W (~(G((aa_q) | (aaaaa_p)))))))))))))
+
+exists ppp.exists pp.exists p.forall q.(X(X((aaa_ppp) => (aa_p)))) U (((F(~(F(aaaaa_q)))) U (~((a_ppp) & (aaaaa_q)))) & (F(((~(aaaaa_q)) => ((aaaaa_p) W (G((aa_ppp) & (aaaa_ppp))))) U (G(((aaa_q) & (G((a_ppp) | (aaaaa_q)))) U ((a_ppp) <=> ((aa_p) => (aaa_pp))))))))
+
+exists ppp.exists pp.exists p.forall q.(G(a_pp)) R ((X(G(aaaa_q))) => (G((G(X(((aaa_p) & (aaaa_q)) W ((aaa_q) | (G(a_ppp)))))) U (F((((X(aaaaa_q)) R (aaaa_q)) U (((aaa_pp) & ((G(a_q)) W (X(aaa_q)))) W (aaa_p))) & ((aa_ppp) R (aaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.(F(X(((aaa_pp) | (aaaaa_p)) <=> (F(aa_q))))) & (((((~(aa_q)) <=> (aaa_p)) <=> (((aa_ppp) R (aaaa_pp)) => (G((aaa_pp) U (aaaa_ppp))))) W ((aaaa_q) => (aa_q))) U ((aaa_q) W (X(aaa_ppp)))) & (X(((aa_pp) W (aaa_p)) | (X(a_pp))))
+
+exists ppp.exists pp.exists p.forall q.X(F(((G(F(a_q))) W (~(F((~(X(X(a_q)))) W (((((a_q) <=> (aaa_pp)) <=> (F(~(aaaa_q)))) U (X(aaaaa_p))) R (aaa_q)))))) & ((G(a_ppp)) W ((F(aaa_ppp)) <=> (~(F((a_p) | (X(aa_q)))))))))
+
+exists ppp.exists pp.exists p.forall q.(a_q) & ((a_p) | (((a_q) => (aa_ppp)) W (G((aa_ppp) W (aaaaa_p)))) | ((((G(aaaaa_q)) <=> ((aa_pp) U (G(F(aaa_p))))) U (G(aaaaa_q))) R (G(aaaaa_q))) | (F((F(aaa_q)) => ((F(G(a_p))) | (F(aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.X(G(X(~(X(((X(a_q)) W (X(G(a_ppp)))) | ((X(((~(aaaaa_q)) <=> (G(((aaaa_p) R (aaaaa_q)) U (a_q)))) U ((F(a_ppp)) <=> (X(aaaa_pp))))) R (F(X((G((a_pp) <=> (aaaa_q))) R (X((aaaaa_q) => (a_p))))))))))))
+
+exists ppp.exists pp.exists p.forall q.((G((a_q) R (aaaa_ppp))) | (G((aaaaa_ppp) R (aaa_q)))) U ((X(F((aa_ppp) => (aaa_p)))) => ((aaaaa_ppp) <=> (X((X(~(G(aaaa_p)))) & ((~(aaaaa_q)) R (F(X((aaa_q) <=> (X((aaaaa_pp) U (X((aa_q) & (aaaa_ppp)))))))))))))
+
+exists ppp.exists pp.exists p.forall q.X(((((aa_q) | (aaaa_p)) R ((aaaa_pp) W (aaa_ppp))) => ((aaaa_q) | ((aa_pp) => (G((a_pp) => (aaaaa_q)))) | (((aaaaa_q) <=> (F(G(aaa_p)))) W (aaaaa_ppp)))) W (X((G(aaaa_q)) & (((aaa_q) & (F(aa_pp))) R (aaaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.(X(~((F(~(G((G(((aaa_pp) W (aaaaa_q)) U (~(aaaaa_ppp)))) W ((~(aaaa_q)) R (aaaaa_p)))))) <=> ((~(aa_q)) & (aaa_q) & (((aa_pp) W (aaaa_q)) <=> ((aa_p) R (F((aaaaa_p) => (aaaa_q))))))))) | (X((X(G(aaa_ppp))) R (aaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.(X((~((aaaa_q) & (~((aaa_ppp) & (aaaaa_ppp))))) W ((X(G(aaaaa_q))) U ((G(F(aa_q))) => (~(G(a_ppp))))))) & (X(((((~(aaa_q)) R ((a_ppp) <=> (aaaaa_p))) => (F(a_pp))) U (aaaaa_p)) => (~(aaa_q))))
+
+exists ppp.exists pp.exists p.forall q.((a_p) & ((G(X((a_q) & (aa_q)))) R (aaa_pp))) W (G(F(((X((G((aa_p) R (aaa_q))) U (~(X(~(X(~((~(aaaa_pp)) R (G(aa_ppp)))))))))) W ((aa_q) & (aaa_pp))) => (X(~((aaa_q) U (aaaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.F(G(F((F(X(((X(aaaa_ppp)) | ((X(aaaa_q)) => ((X((aa_ppp) | (X(aaaa_q)))) | (X(a_p))))) U ((~(a_q)) | (aa_p))))) W (F(((aaaaa_q) <=> (~((aa_q) | (X(aa_pp))))) R ((~(aa_q)) W ((aa_q) & (aaaaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.((((aaa_q) R (aaaaa_pp)) | ((aaaaa_ppp) & ((a_q) W ((a_q) R (aaaa_q))))) => ((X(G(aaaaa_pp))) => (a_ppp))) W (((F(((F(aaaaa_q)) U (aaaaa_q)) W (aa_q))) <=> (X(~(F(aa_q))))) R (G(~(G((~(a_q)) & (G(aaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.X((((~(aaaa_q)) => (a_pp)) <=> (F(G((~(F(aaa_q))) R ((aa_ppp) R (aaaaa_p)))))) & (F(~(X(X((~(X(~(((a_ppp) & (aaaaa_pp)) => (G(aaa_q)))))) W ((a_q) | (((a_p) W (aa_pp)) W (aa_ppp)))))))))
+
+exists ppp.exists pp.exists p.forall q.(~(((X(aaa_p)) U (aaa_ppp)) W ((aa_q) W (F((G(aaa_pp)) <=> (G(a_ppp))))))) U ((F(X(F(G(X(aaaaa_p)))))) | ((G(aaaa_ppp)) <=> ((True) U (G(aaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.(((~(X((aaaa_ppp) & (F(aa_p))))) U ((F(X(a_q))) U (F(~(aaaa_q))))) W (F((~(aaaaa_pp)) & ((~(aaaaa_q)) W (aaaaa_q))))) => ((X((aaa_q) & ((aa_q) U (a_q)) & ((aaa_q) R (~(aaaaa_q))))) R (G(aaaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.F((F((G(F(X((a_q) | ((aaa_q) R (aaaaa_q)))))) <=> (((aa_p) W (X(aa_q))) => (~((aaaa_pp) => (~(aaaaa_ppp))))))) U (F((X((G(a_q)) <=> (((a_pp) U (aa_q)) W (aaaa_pp)))) => (~(((aaa_q) U (aa_pp)) | (X(a_q)))))))
+
+exists ppp.exists pp.exists p.forall q.((((aaa_p) | (G(aaa_q))) W (X((aaaa_ppp) U (F(aaaaa_p))))) W (~(F(X((G(a_ppp)) U (~((aaaa_p) <=> ((a_q) W (aaaa_p))))))))) | (F((G(F(a_q))) W ((~(a_pp)) => (X(X(aaaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.(~((X(aaa_q)) R (aaaaa_pp))) W (F(((~(aaa_q)) & (aaaaa_q)) | (G(((aaa_q) | (F(X(a_q)))) W (((~(a_p)) | (((aaa_pp) & (X(a_q))) => (G(aaa_p)))) R (X(aaaaa_p)))))))
+
+exists ppp.exists pp.exists p.forall q.(G(aaa_q)) & ((X(G((X((a_q) R (aaaa_q))) => (G((G(aaaaa_ppp)) U (aa_ppp)))))) W ((((aaaaa_q) R (aaaa_pp)) => ((((aa_pp) => (a_q)) U (~(aa_q))) W (aa_q))) U ((((aa_q) U (~(aa_q))) W (aa_ppp)) => ((aaaa_pp) | (aaaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.(((X(aaaaa_q)) & (((a_p) | (aaaa_p)) W (aaa_q))) | (X(((a_ppp) & (F((G(F((aaaaa_q) <=> ((~(aa_q)) <=> (aaaaa_pp))))) U (a_ppp)))) <=> (F((F((F(aaaaa_q)) R (aaaaa_q))) U (aaa_ppp)))))) & (G(aaaaa_q)) & (X(X(~(aaa_p))))
+
+exists ppp.exists pp.exists p.forall q.((X(aa_pp)) W (~((aa_q) <=> (aaa_q)))) R (F(((G(aaa_p)) & (F(aaaa_q))) U (G(~((aaaaa_q) | (X((aaaa_q) & (G(aaa_ppp)))) | (G(~((F(G(X(aaaa_q)))) <=> ((G(aaa_p)) <=> (F(~(aa_q))))))))))))
+
+exists ppp.exists pp.exists p.forall q.((((aa_q) <=> (~(F((((G(aaa_q)) <=> (F((aa_q) | (aaa_ppp)))) <=> (X(aa_pp))) => (((aaa_ppp) U (~(X(a_pp)))) R (G(aaaa_q))))))) W (~(aaa_q))) R (~(aaaa_pp))) <=> (X((aaa_q) & ((aa_pp) U (G(~(a_q))))))
+
+exists ppp.exists pp.exists p.forall q.((X(G(~((aaa_q) R (X(aaaaa_pp)))))) => ((((aaa_q) U (~(aaaa_pp))) & ((X(aaa_q)) U (X(F((~(aaaa_p)) U ((F(aaaaa_p)) U (aaa_q))))))) R (aaa_pp))) => ((X((F(~(aaaa_p))) R (aa_q))) R (X(G(aaa_q))))
+
+exists ppp.exists pp.exists p.forall q.X(F(((G(F(aaaaa_ppp))) => (((F((aaaaa_q) => ((a_pp) <=> (aaaa_q)))) R (F(X(F((aaa_p) <=> ((aaa_q) <=> (aaaa_q))))))) | (X((a_p) => ((aa_ppp) => (~(G(aa_q)))))))) => (~((X(aaa_ppp)) <=> ((aa_ppp) R (aaa_ppp))))))
+
+exists ppp.exists pp.exists p.forall q.F((~((aaa_q) => (~(aaaa_p)))) <=> (X(((a_ppp) | (G(aaa_q)) | (F(X((aa_pp) W (G(aaa_q)))))) => ((G((aa_ppp) & (aaaaa_pp) & (X((aaa_ppp) <=> (G(aaaaa_p)))))) W ((F(~(aaa_q))) U (X(G(aaaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.(G(~(F((F(X((G(~((~(aa_pp)) & (G(X(aaa_q)))))) | ((F(X(aaaaa_ppp))) U (~(G(aaa_q))))))) U (a_pp))))) W (X(((aaa_q) & (F(aa_ppp))) | (~(F(aaaa_p)))))
+
+exists ppp.exists pp.exists p.forall q.(((a_pp) U (aaaaa_q)) R (((((aa_p) W (aaa_pp)) <=> (F((a_q) & (X(aaaa_ppp))))) <=> ((X(aaaaa_ppp)) R (a_ppp))) U ((~(a_ppp)) & (F(aa_p))))) & ((aaaa_q) => (F((G(a_pp)) U ((aaaa_pp) R ((~(aaaaa_ppp)) & ((aaaa_q) | (F(aaa_pp))))))))
+
+exists ppp.exists pp.exists p.forall q.(((X(a_ppp)) U (X((a_p) <=> (aaaaa_q)))) => (~(((aaaa_q) | (X((a_ppp) => (aaaa_q)))) => ((a_ppp) & ((aaaa_ppp) R (a_ppp)) & ((aaaa_pp) R (aaa_q)))))) | (((aa_q) <=> ((aaa_p) R (aa_pp))) W ((G(aaaaa_q)) R (G((aaa_q) R (G(aaaa_pp))))))
+
+exists ppp.exists pp.exists p.forall q.(G(((a_q) & (aaa_q)) | (F(aa_pp)))) W (F((aaa_q) | (((aaaaa_q) => ((G(F(X((a_pp) R (G((aaa_ppp) => (aaaaa_p))))))) | ((F(a_q)) R (aaaa_q)))) <=> (((F(a_q)) => (aaaaa_p)) W ((~(aaaa_q)) R (aaaaa_p))))))
+
+exists ppp.exists pp.exists p.forall q.((~(aa_pp)) => ((aaaa_ppp) & (aaaaa_q))) => (((aaaaa_q) | (X(G(aa_q)))) W ((F(G(F(G(F(aa_p)))))) | (X(G(aaa_pp))) | ((G(aaa_p)) & (X(~(X(F((aaa_q) W (aaaaa_q)))))))))
+
+exists ppp.exists pp.exists p.forall q.((G(aa_q)) | (F(~(((~((G(aaa_ppp)) U ((~(G((aa_q) & (F(X(a_q)))))) | (~((aaa_q) R ((aaaaa_q) R (~(aaa_pp)))))))) => (aaaaa_q)) U (aa_q))))) W ((F(a_q)) U (X((~(aa_q)) R (aaaaa_ppp))))
+
+exists ppp.exists pp.exists p.forall q.(~(X(((aaaa_ppp) & (F(aaaaa_pp))) U ((((aa_ppp) <=> (aaaa_p)) => (a_ppp)) U (F(aaa_p)))))) | ((X(X(aaaaa_pp))) => (F(((aaa_pp) & (aaaaa_q)) <=> ((G(F((F(aaaa_p)) U (aaa_q)))) => (X(aaaaa_pp))))))
+
+exists ppp.exists pp.exists p.forall q.F((X(G(F((~((aaaa_pp) & ((aaa_pp) => (F(aa_q))))) U ((F((a_q) <=> (((a_q) W (aaaa_ppp)) W (F((aa_p) => (F(aaaa_q))))))) | ((aaaa_q) U (~((X(aaa_q)) R (a_q))))))))) | (F((aa_ppp) & (~(X(aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.((X(X(aaaaa_pp))) W (aaaa_q)) U (X(F(G(((aaa_q) W (F(X((F(a_p)) => ((X(aa_pp)) | ((aaaa_q) W (a_q))))))) & (~(F((~(X((F(G(a_p))) U (aaa_p)))) W (F(a_ppp)))))))))
+
+exists ppp.exists pp.exists p.forall q.(G(((aaaa_q) & (aaaaa_p)) <=> (F((a_ppp) | (aaaaa_pp))))) W ((((F(~(aa_ppp))) U (aaa_q)) R ((aaa_pp) & (aaaa_p))) <=> (G((F(aa_q)) R ((F(a_pp)) & ((X(aaaa_q)) W (G(~((~(aaaaa_q)) <=> (X(aa_ppp))))))))))
+
+exists ppp.exists pp.exists p.forall q.((a_ppp) U ((aaaaa_p) & (F(aaaaa_p)))) => ((aaa_q) <=> (F(G(aaaa_q))))
+
+exists ppp.exists pp.exists p.forall q.((G(aaaa_q)) U (aaa_q)) W ((((X(a_q)) W ((X(aa_p)) W (aa_pp))) & (~(F(~(X((aaa_q) R (~(aaaaa_q))))))) & (F(a_q))) <=> (((G(aaaaa_q)) U (X(X(F(G(a_pp)))))) => (a_q)))
+
+exists ppp.exists pp.exists p.forall q.(((X(~(aa_q))) W ((aaa_ppp) <=> (G((aa_pp) => (aaa_ppp))))) & ((((aa_q) U ((aaa_q) <=> (aaaa_pp))) W ((aaaa_ppp) | (G(aa_pp)))) => ((aa_pp) <=> ((F(aaa_pp)) | (X(F(aaaa_q))))))) U ((aaaaa_p) | (((aaaa_ppp) U (a_p)) <=> (G(a_q))))
+
+exists ppp.exists pp.exists p.forall q.F((X(F(X(aaaaa_q)))) | (~((aaaaa_ppp) W ((G((aaa_ppp) => (aaaaa_q))) R ((F(a_pp)) W (aaaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.(~(X(((~(aa_p)) | (~(aaaaa_p)) | (F(~(aa_q)))) => ((aa_pp) & (aaaa_ppp))))) R (G((X((~(aaaaa_pp)) W (~((aaaa_q) => (G(aa_pp)))))) R ((a_p) R (G((aa_ppp) | (X(a_q)))))))
+
+exists ppp.exists pp.exists p.forall q.(G((aa_ppp) & (F(aaa_p)))) & ((((aaaa_q) & ((a_q) R ((a_q) W (F(a_ppp))))) R ((aaa_q) W (aa_ppp))) U ((F(((X(aaaa_pp)) | (F(~((aa_pp) U (a_q))))) R (G(X(F(aaa_q)))))) W ((X(aaaaa_ppp)) R (F(a_q)))))
+
+exists ppp.exists pp.exists p.forall q.(G(X(aaaa_q))) => (~((~(G(F((aa_ppp) => (~(aaaa_pp)))))) R (((~(F((((aa_pp) | (~(aaaa_ppp))) W (F(aa_q))) => (X(a_ppp))))) => ((~(a_ppp)) & (X(~(F(a_pp)))))) U ((~(aa_p)) | ((aa_q) <=> (aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.F((G(~(F(X(((aaa_p) W (X(aaaa_ppp))) W ((((~(a_p)) | (F(aaaa_ppp))) R (~((~(a_p)) <=> (aaaaa_q)))) <=> (((a_q) W (aa_q)) R (aaaa_pp)))))))) | ((X(aaaa_q)) <=> (F(a_q))))
+
+exists ppp.exists pp.exists p.forall q.(((~(a_ppp)) R (X(G(F(G((~(aa_q)) & ((aa_ppp) => (a_q)) & (((aaaaa_ppp) | ((aa_p) => (F(aaaaa_ppp)))) => (G(aaaaa_pp))))))))) R (F(~(F((aaa_ppp) | (G(a_ppp))))))) => (a_pp)
+
+exists ppp.exists pp.exists p.forall q.F((((F(~(aaaa_ppp))) R (((~(aaaa_q)) <=> (aaaaa_ppp)) <=> (F((aaa_q) & (aaaaa_ppp))))) R (F(((~(F(aaaa_q))) R (aaa_q)) & ((~(aaaaa_q)) W (aaaa_pp))))) U (((a_p) R (G(aa_q))) | ((X(~(aaaaa_pp))) U (aaa_q))))
+
+exists ppp.exists pp.exists p.forall q.(((G(X((a_q) | (X(a_ppp))))) <=> (F(aaa_q))) W ((~(((aaaaa_pp) <=> (F(aaaa_ppp))) U ((F(~(G(aaa_p)))) R (G(aaa_q))))) <=> ((aa_q) R (G(aa_p))))) U (X((((aa_ppp) <=> (aaa_q)) U ((aaaaa_q) U (aaa_q))) <=> (F(aaaa_pp))))
+
+exists ppp.exists pp.exists p.forall q.F((F(G(X((aaaaa_p) U (((G((aaaaa_q) <=> (G(aaaa_ppp)))) | (((a_q) => (aaaaa_p)) <=> ((a_ppp) U (X(aa_q))))) & ((aaaaa_p) | ((aa_q) W (a_q)))))))) W (((a_pp) U (aaaaa_p)) => (G(~(aaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.F((((X(a_pp)) => (aa_q)) W ((aaaa_pp) U (aaaaa_p))) W ((((aaaaa_pp) U (F(aaaa_ppp))) W (G(((aaa_p) <=> ((G(aaaa_p)) R (G(aa_pp)))) & (((F(aaaaa_p)) => (~(a_q))) => (~(aaaaa_pp)))))) | (G((a_q) <=> ((~(aaa_q)) & (aaaaa_p))))))
+
+exists ppp.exists pp.exists p.forall q.(True) U (((~(((F(~(aaa_q))) R ((a_q) | (aaaaa_p))) => ((F(aaa_q)) W (aa_p)))) => ((F(G(F(aaaaa_p)))) => ((aaaaa_pp) | (X(aaa_ppp))))) => (aaa_q))
+
+exists ppp.exists pp.exists p.forall q.((((aa_p) <=> (aaa_q)) R (~((aaaaa_q) <=> (X(((~(G(F((F(aaa_q)) | (F(aa_p)))))) | (F(aaaaa_q))) <=> (X((~(G(aaaa_q))) => ((aaa_p) W (aaaa_q))))))))) => (G(~(aaaaa_q)))) & ((aaaaa_pp) | (X(aaaaa_p)) | (X(aa_p)))
+
+exists ppp.exists pp.exists p.forall q.((~((aaaa_pp) <=> (X(G(~(aa_q)))))) R (~(X(((F(((aaaaa_q) U ((aaaaa_p) & (G(aaaa_q)))) W (~((aa_q) & (aaaaa_q))))) U (aaaa_q)) & (F((aaa_q) <=> ((a_ppp) U ((~(aaaaa_pp)) U (aaaaa_q))))))))) | (G((aaaaa_pp) & (X(a_q))))
+
+exists ppp.exists pp.exists p.forall q.(X(~(G(F((a_q) & (~(aaaaa_q))))))) <=> ((((aaaaa_ppp) | (F((a_ppp) W (aaaa_pp)))) <=> (~(F(~(((aaa_q) W (X(aaa_q))) R ((aaaa_q) U ((~(aaa_p)) & (aaaaa_q)))))))) => ((aaaa_p) U (aaaaa_p)))
+
+exists ppp.exists pp.exists p.forall q.(X((a_pp) | ((aaa_q) <=> (((aa_ppp) R (aaa_q)) <=> (((~((aa_p) W (aaaa_ppp))) W (aaa_pp)) W (aa_p)))))) <=> (X(aaaa_ppp))
+
+exists ppp.exists pp.exists p.forall q.G(X(((((aa_q) U (F(aa_q))) <=> (F(a_ppp))) W ((aaaaa_pp) & ((X(aaaa_p)) => (a_ppp)))) U ((aa_q) <=> ((aaa_q) R (((aaa_p) & (aaaa_q)) W (G(~(G(aaaa_p)))))))))
+
+exists ppp.exists pp.exists p.forall q.F(((aa_p) | ((aaaa_q) => ((aaa_ppp) W (F(a_q))))) & (((aaa_ppp) & (((F(aaaaa_q)) => (a_ppp)) <=> (~(X(aaa_pp))))) => (X(X(G(((X(~(X(aaaaa_q)))) U ((aa_pp) <=> (~(aaaaa_p)))) R (~(F(aaaa_q)))))))))
+
+exists ppp.exists pp.exists p.forall q.(~(F((((aaaa_q) U (G(aaaa_q))) <=> ((F((aaa_q) & (((a_q) | (aaa_q)) => (aaaa_q)))) => ((a_ppp) & ((aa_ppp) => (aaaaa_q))))) & (G((aa_q) => ((aaa_q) <=> (X(aa_pp)))))))) & (~((aa_q) => (F(aaa_q))))
+
+exists ppp.exists pp.exists p.forall q.(((aaaaa_pp) & (G(a_q))) U ((aaa_ppp) | ((X(aaa_p)) W (X(a_pp))))) <=> ((((aa_q) & (aaa_q)) R (~((G(a_p)) W (aaaaa_q)))) W (F(((aaa_q) R (((a_q) & (aaaaa_ppp)) R (X(aaa_p)))) & (~((F(a_ppp)) W (F(aaaaa_ppp)))))))
+
+exists ppp.exists pp.exists p.forall q.((aaaa_q) & (X(G(aa_q)))) R (F(X(((aaaa_p) W (X(F(aa_p)))) <=> (((aaaaa_pp) R (G((X(aaaaa_ppp)) & (((G(aa_q)) U (aaaaa_pp)) => (aaaaa_q))))) <=> (F(a_ppp))))))
+
+exists ppp.exists pp.exists p.forall q.F(((aaaa_q) | (((aa_p) | (aaa_pp) | ((X(~(aaaa_q))) R (aaa_q))) R (F(((F(aa_q)) W (aa_q)) => ((a_q) R (~(F(aaa_q)))))))) W (X((aaaaa_ppp) <=> ((F(a_q)) U ((F((aaa_q) => (a_q))) U (X(aaaa_ppp)))))))
+
+exists ppp.exists pp.exists p.forall q.(((X((G((aaaa_q) & (~(X(aaaaa_q))))) W (F((aa_ppp) => (~(aaaaa_q)))))) | ((aa_pp) & ((aaaaa_pp) | ((aaaa_p) & (X(aaaaa_q)))))) W (~(a_p))) R ((F(X((a_q) <=> (F(aaaaa_q))))) => (((a_pp) U (aaaaa_ppp)) U (G(F(a_q)))))
+
+exists ppp.exists pp.exists p.forall q.G(((~((aa_pp) | (G((F((F((a_q) U (aa_ppp))) R (aaaa_p))) U ((G(aaaa_ppp)) | (F(~(aaaa_q)))))))) => ((~(aaaa_q)) R (G((True) U ((F(aaa_ppp)) U ((a_p) & (~(aaa_q)))))))) & (F(aaaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.F(((F(~(X(G(aa_p))))) => (~(G(X(aa_q))))) | (G((((X((F(aaa_pp)) => (G(F(aa_ppp))))) R ((aaa_p) U (F(aa_q)))) W (a_q)) U ((~((G((a_ppp) W (aaaaa_q))) U (~(aaa_p)))) R (aaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.~(((F(G(X(F(aaa_q))))) R ((((a_q) & (aaaa_pp)) W (a_p)) & (X(((aaaaa_q) <=> (G(aaaaa_p))) W ((F((a_p) & (aaaa_ppp))) <=> (F((X((aaa_q) W (aaaa_q))) | ((aaa_ppp) <=> (G(aa_pp)))))))))) U (F(aaa_ppp)))
+
+exists ppp.exists pp.exists p.forall q.~(X(X(((a_pp) U ((a_p) | (aa_p))) & ((F((G(aaa_q)) W ((aaaaa_q) R (G((aaaa_ppp) & (G(F(a_q)))))))) R ((X(a_q)) <=> (G((aaaa_p) | ((X(aaaa_q)) => (X(a_q))) | ((aaa_p) R (X(aa_pp))))))))))
+
+exists ppp.exists pp.exists p.forall q.F(G(((G((aaa_ppp) R (~(G(X((aaa_q) <=> (~(aaaa_p)))))))) & ((F(X(((aaa_p) W ((a_pp) | (aaa_q))) W (F(~((aaa_q) U (a_p))))))) | (G(a_ppp)))) W (((aaa_p) <=> (X(a_pp))) <=> (X(aaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.(F(((aaaa_p) W ((aa_q) R (aaaaa_q))) W (~((G(aaa_pp)) & (~((~(aaaa_q)) & (F(aa_p)) & ((~((aa_pp) | (aaa_p))) U (X((G(aaaa_q)) | (X(aaaa_q))))))))))) <=> ((G(~(aaa_q))) R (F((aa_ppp) <=> (G(a_pp)))))
+
+exists ppp.exists pp.exists p.forall q.(F((((a_q) => (aaaaa_q)) R ((aa_p) & (F(aaa_ppp)))) W ((aa_q) <=> (X(aaaaa_pp))))) R ((~(G(X(X(((aa_q) & (~(aaaaa_q))) => (aa_pp)))))) U (X(X(((F(aaaaa_ppp)) => (X(aa_ppp))) W ((aa_pp) R (X(a_p)))))))
+
+exists ppp.exists pp.exists p.forall q.(((X(aaa_pp)) => (G(aaaaa_q))) => ((G(aaaa_ppp)) R ((((aaa_q) & (~(aaaa_p))) => (~(a_q))) W ((aa_q) | (X(aaa_p)))))) => ((F(~(((~(F(a_p))) & (~(X(aaaaa_p)))) U ((X(G(aa_q))) & (G(a_q)))))) R (aaaaa_q))
+
+exists ppp.exists pp.exists p.forall q.(G(((aaaa_pp) => ((aaa_q) U (a_q))) => ((F(a_p)) R (~(G(X((a_ppp) | (F(~((X(F(aaa_p))) W (X((aaaaa_q) R (G(aaaa_q)))))))))))))) => (X(((~(aaa_q)) & (~(aaaa_q))) <=> ((F(~(aa_ppp))) => (a_q))))
+
+exists ppp.exists pp.exists p.forall q.((F(X(F(~(G((aa_pp) => (a_q))))))) W ((((aaaa_ppp) U (a_pp)) W (G((G(aaaa_q)) <=> ((aaa_q) W (aaaaa_q))))) W ((aaaa_q) <=> ((aa_pp) => (aaaa_q))))) U (((X((aa_p) R (G(aaaaa_p)))) U (~(aaaaa_q))) => (X(a_q)))
+
+exists ppp.exists pp.exists p.forall q.(G(((G(aaaaa_p)) & ((aaaa_q) R (aaa_q))) U (~((a_q) | (F(aaaaa_q)))))) W ((aaaaa_q) R (X(F((X(G(~((aaa_ppp) & (((aaa_p) <=> (aaaa_q)) | ((aaaaa_q) R (aa_q))) & (F(G(aa_ppp))))))) W ((F(aaaa_pp)) => (~(aa_pp)))))))
+
+exists ppp.exists pp.exists p.forall q.(((~(aaa_pp)) => (aa_ppp)) | (F(aa_q))) & ((G(~(X(((F(~(aaa_q))) W (~(aaa_pp))) U (F(X((F((F(G(aaaa_q))) W (aaaa_pp))) => (((~(a_p)) R (~(F(aaa_q)))) => (a_ppp))))))))) | (F(aaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.G((F(((aa_ppp) U (aaa_ppp)) => ((~((~((~(aaaa_pp)) & (~(aaaaa_pp)))) & (~((((a_q) U (aaaa_q)) U (aa_q)) W (aaaa_q))))) => (G((X((G(aa_p)) | (X(G(aa_ppp))))) R (~(F(aaaaa_q)))))))) => ((aaaaa_q) & (G(aaa_p))))
+
+exists ppp.exists pp.exists p.forall q.G((((X(aa_ppp)) => (X((aa_p) U ((aa_p) | (F(aaaa_q)))))) U ((X(((aa_q) & (X(aaaaa_ppp))) => (X((aaa_ppp) R (aa_q))))) => ((G(X(aaa_q))) W (X(aaa_p))))) R (G(aaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.((X(aa_q)) | (G(((aa_q) <=> (aaa_pp)) W (X((a_ppp) <=> ((G((~((aaa_p) | (F(aaaaa_q)))) U (aa_q))) & (F(((a_q) <=> (G(aa_q))) U (aaa_p))))))))) U (((aaaaa_q) <=> ((aaa_q) => (aaaa_pp))) R (aa_q))
+
+exists ppp.exists pp.exists p.forall q.(((F(aaaa_q)) W (((~(a_q)) | (aa_ppp)) W (~(aaaaa_ppp)))) => (((a_q) R ((aaa_q) R ((aa_p) & (aaaaa_pp)))) U (F(G(~(a_ppp)))))) R ((F((X(aaa_q)) => ((F(G(F(aaaaa_q)))) U ((aaaa_pp) | (X(aaa_q)))))) U (F(aaaaa_ppp)))
+
+exists ppp.exists pp.exists p.forall q.((a_q) W (F(aaa_q))) & (F((X((~((X(aaaa_q)) <=> ((aa_p) <=> ((G(F(aaa_pp))) U (aaa_q))))) | (X((F((aaaa_p) | (aaaaa_p))) W ((~(a_q)) & (G(aaaa_q))))))) & ((F(a_q)) | (F(X(aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.G((((aa_ppp) => ((~(aaa_q)) U (G(a_q)))) => ((X(a_q)) R (((((a_q) <=> (aa_p)) => (X(aaaa_p))) => (G(aa_p))) | (F(X(F(aaa_pp))))))) | ((aaaa_ppp) U (((aaa_ppp) U (X(G(a_ppp)))) W ((aaaa_p) W (aaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.F((G(aaaa_q)) & (F(((G(((a_ppp) <=> (aa_q)) U ((G(aaaa_q)) W ((aa_ppp) <=> (G(a_ppp)))))) & ((X(X(aaa_pp))) | ((aaaa_p) <=> (X(a_ppp))))) | ((~(aaaaa_q)) <=> ((a_p) | (~((aaaa_q) R (a_q))))))))
+
+exists ppp.exists pp.exists p.forall q.((F(aa_q)) => (G(X(F((aaa_p) => (aaaaa_ppp)))))) => (G(((aaaaa_q) U (F((a_q) | (aaaa_q)))) U (X(F((F((X(X(aa_pp))) & (X(aaa_q)))) R (G(~(X(F(X(aa_q)))))))))))
+
+exists ppp.exists pp.exists p.forall q.((aaaaa_pp) & ((X(F(aa_ppp))) => ((a_ppp) & ((~(a_pp)) <=> ((X(G(a_pp))) R (F(~(aaaa_pp))))))) & ((a_q) <=> ((aaaa_pp) R (aaaaa_pp)))) U (((F((F(aaaa_p)) => (X(a_q)))) U (G(aaaaa_q))) => (G(aaaaa_q)))
+
+exists ppp.exists pp.exists p.forall q.((X(((a_q) | (X((a_p) => (aaaa_q)))) U (X(((F(aaaa_p)) W (a_p)) => (F(X(G((((aa_q) | (~(aaa_q))) W (G(aa_q))) <=> (G(~(a_q))))))))))) R ((~(aaaa_q)) | (X(aaaa_q)))) U ((aa_q) | (X(a_q)))
+
+exists ppp.exists pp.exists p.forall q.G((F(((X(~(F(G((a_p) <=> (aaaa_p)))))) W (G((aaaa_q) | ((~(aa_ppp)) R (aaaaa_ppp))))) W (G((F(aaaaa_q)) W (F(aaaa_p)))))) | ((aaaa_q) U ((aaa_q) & (aaaa_q))) | (F((~((aa_pp) <=> (aaaa_p))) U (~(aaaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.(((X((aaa_p) R (~(((a_q) <=> (aa_ppp)) <=> ((aaaa_ppp) U (X(aa_q))))))) <=> (X(G(aaaa_p)))) R ((G(F(G(aaaaa_q)))) U (X((G(aaaa_ppp)) <=> (F((~(aaa_q)) | (aaaaa_p))))))) R ((G(aa_q)) => (a_q))
+
+exists ppp.exists pp.exists p.forall q.~((~((aa_p) <=> ((G(((F(aa_q)) W (X(aa_pp))) R (a_pp))) W (G(aaaa_q))))) R ((((aaaaa_q) R (F(aaa_ppp))) => (aaaaa_q)) => (X((((aaaaa_q) W (aaa_pp)) => (X(aa_q))) R ((~(a_ppp)) | (F(G((aaaaa_pp) | (G(a_pp))))))))))
+
+exists ppp.exists pp.exists p.forall q.G(((((G(aaaaa_q)) => (F(((aaaaa_q) U (aa_q)) <=> ((aa_q) U (a_q))))) & (G(F((~(aaaa_q)) R (aa_ppp))))) <=> ((X(X(G(aaa_q)))) | (X(a_q)))) R ((~(aa_ppp)) & (aaaaa_q) & (((F(aaa_q)) W (a_p)) <=> (F(aaaaa_ppp)))))
+
+exists ppp.exists pp.exists p.forall q.X(~(((aa_p) R (X(X(X((a_q) <=> ((~((aa_q) R (a_ppp))) <=> (X(X(aaaaa_p))))))))) U ((G((X(aaa_p)) W ((True) U ((X(aaa_ppp)) R (aaaa_ppp))))) R (((a_q) | (aaa_pp)) W (aaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.X(((aaa_ppp) <=> (aaaa_q)) & (G(aaaaa_ppp)) & (G((((~(aaaa_pp)) R (a_q)) | (F(aaaa_q))) => (F(~((aa_ppp) & ((aaa_ppp) R (aaaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.(X((((~(aaa_q)) <=> ((aaa_q) & (aaaa_q))) W ((~((a_pp) | (aaa_q))) R (aaaa_p))) W ((((aaa_q) U (aa_p)) W ((~(aaaa_q)) <=> (aaaaa_p))) U (~(aaaaa_q))))) => ((((aaaaa_pp) U (a_pp)) | (X(aa_ppp))) U (G(F((G(aa_pp)) U (aaaaa_p)))))
+
+exists ppp.exists pp.exists p.forall q.(G((((aaaa_ppp) & (~(aaaa_q))) R (X(~(aaaaa_q)))) | (X(a_q)) | (G(aaaa_q)))) => ((G(((X((aaaaa_ppp) & (F(aaaa_pp)))) R (a_p)) W (aaa_pp))) => (((G((~(aa_q)) W (a_p))) & (~(G(aaaaa_q)))) => (~(aaaaa_q))))
+
+exists ppp.exists pp.exists p.forall q.~((((G(aaaa_q)) | (~((aaaa_q) R (F(aaaaa_q))))) R ((aaa_ppp) R (aaaaa_ppp))) & ((((~(a_p)) & (~(X((a_q) & ((aaaaa_ppp) | (G(aaa_p))) & ((aaa_ppp) R (aaaa_ppp)))))) U (aa_pp)) W (G(((aa_q) & (aaa_q)) => ((aa_q) & (aaaaa_p))))))
+
+exists ppp.exists pp.exists p.forall q.(~(aaaaa_pp)) | ((F((aa_p) | ((F(X(aaaa_p))) U ((aaaaa_ppp) => ((~(aa_ppp)) R (a_pp)))))) U ((aaaaa_q) W (F((F(aaaaa_ppp)) W (X(((~(F(a_ppp))) U (((F(aaaa_ppp)) R (aaaa_ppp)) => ((aaaa_q) & (F(a_ppp))))) W (F(aaa_ppp))))))))
+
+exists ppp.exists pp.exists p.forall q.X(((~(((aaaa_q) => (X(a_q))) U ((aaa_q) <=> ((((F(aaaaa_p)) W ((G(aaaaa_q)) => (aaaa_p))) W (aaaa_ppp)) W ((aaaa_q) | ((aaa_ppp) & (aaaaa_p))))))) W ((a_ppp) => (~(X(aaaaa_q))))) => (~(X((aaaaa_q) U (X(~(aaaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.(((~(aa_pp)) W (((F(aaaaa_p)) W (G(aaaaa_ppp))) | (G((X(aa_q)) U (aaaa_pp))))) U (((aa_ppp) U (aaa_ppp)) | (G((aaa_q) <=> ((a_q) R ((F(aaa_ppp)) => (aaaaa_ppp))))))) R (~((X(((aaa_q) <=> (aaaa_pp)) U ((a_q) => (aaaaa_p)))) W (aaaaa_pp)))
+
+exists ppp.exists pp.exists p.forall q.G(((aa_ppp) | ((aa_ppp) R ((F(a_q)) U (aaaa_ppp)))) <=> (F(((aa_p) W (~(aa_p))) | (X(F(~(((aaaaa_p) R ((aaaa_q) U (X(aaaaa_pp)))) & ((aaaa_q) W ((F((a_q) R (aaa_pp))) W (X((aaa_pp) U (X(aaaaa_ppp)))))))))))))
+
+exists ppp.exists pp.exists p.forall q.(~(((G(aaaa_pp)) U (aa_pp)) U ((aa_q) U ((aaa_q) | (F(a_q)))))) U (((G(~(F(aaa_q)))) => ((a_q) & ((G((a_q) | (~(aaaaa_q)))) W (F(aaaaa_ppp))))) => ((F(aaa_ppp)) => ((aaaaa_q) R ((aaaaa_p) => (a_q)))))
+
+exists ppp.exists pp.exists p.forall q.F(((~((a_pp) <=> (G(aaaa_q)))) <=> ((aa_q) | ((aaaa_p) & (X(aaaa_ppp))))) | ((G(~(((~(aaaa_p)) R (((aaaaa_q) R (a_q)) R (aaaa_q))) <=> ((~(aaa_ppp)) => (X((aaaa_pp) U (aa_pp))))))) <=> ((G(aaaa_q)) <=> (G(X(G(aaaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.G((~((((a_q) & (~(G(F(aa_q))))) R (aaaa_ppp)) <=> ((~(aaaaa_ppp)) W (G(aaaaa_q))))) W (F((G(F((a_q) | (G(aaaaa_pp))))) & ((X(~(aa_p))) <=> (((aa_ppp) | (((aaa_ppp) <=> (aaaa_p)) W (aa_q))) => (aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.((aaa_pp) & ((F(aa_ppp)) R ((~(aa_q)) & (X((aaa_p) & (~(X(aaa_q)))))))) | (((~(G(aaaaa_q))) W ((F(aaa_ppp)) U (aaaa_q))) => (F(~(((aaa_p) U (G(aaaa_pp))) <=> (F((~(a_q)) U (G((a_ppp) | (X(aaaaa_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.X(((F(G(aa_q))) R (F((aa_q) W (a_q)))) <=> ((X((~(X((G(aaaa_ppp)) U (F(aa_pp))))) W ((G((aa_q) <=> (aaa_ppp))) U ((aaa_q) => (F(a_q)))))) U ((aaaa_q) U ((aaaaa_q) W ((a_q) W (~(G(X(X(aaaa_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.G((((((aaa_p) U (G(X(~(aa_q))))) & (((a_q) & (aaaaa_q)) | (F((aa_q) W (aaa_p))))) U (aaaa_ppp)) W (F((((aaaaa_p) | (X(G(aaa_pp)))) => (aaaaa_q)) => (~(X((a_ppp) <=> (aaaa_q))))))) <=> (X(aaaa_p)))
+
+exists ppp.exists pp.exists p.forall q.((((X(aa_q)) U ((G(aaa_p)) | (X(aaaaa_pp)))) R (((aa_pp) W (X((aaa_q) <=> ((aaaa_p) <=> (X(aa_q)))))) | (G(X(G(aaa_pp)))))) => (G((a_ppp) R (F(aa_p))))) R ((aaaa_q) & (X((a_p) & ((X(aaaa_ppp)) W (~(aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.F(G(F(G(X(G(((~(aaaa_q)) => (((G(a_ppp)) => (a_q)) U (a_q))) U (G(((aaa_ppp) | (~(aaaa_q)) | (~(F((X(F(a_q))) & ((aaa_ppp) U (X(aaa_q))))))) & ((F(a_p)) | (X(a_q)))))))))))
+
+exists ppp.exists pp.exists p.forall q.G((~(a_q)) & (((aaaaa_pp) | ((a_p) => (aaa_p)) | ((~(aaaaa_ppp)) => (aaaa_p))) U ((((F(aaaa_q)) R (((aa_q) => ((aaaaa_q) W (~(aaaa_pp)))) U (F(X(aaa_p))))) <=> (F((G(aaaa_q)) W (~(a_q))))) <=> (G((a_q) <=> (aaaa_ppp))))))
+
+exists ppp.exists pp.exists p.forall q.(((aaaaa_pp) & (G(aaaaa_q))) R ((F(aa_p)) R (aa_q))) <=> ((((~(a_q)) R (F((aa_q) | (aaaa_ppp) | (aaaaa_q) | (X(aaaa_q))))) U (aaa_p)) <=> (F((G(F(aaaaa_pp))) <=> (~(G((G(aaaaa_q)) => (~(aaa_p))))))))
+
+exists ppp.exists pp.exists p.forall q.(~((((a_ppp) & (aaaaa_q)) R (aaaaa_q)) & (G((((a_p) U ((a_q) W (aaaaa_q))) | (F(aa_pp))) => (X(aa_q)))))) R ((a_p) <=> ((G((aaaa_ppp) W ((~(aaa_p)) W (X(a_q))))) => (F(G(aaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.~((((~(aaa_ppp)) => (aa_q)) R ((aaaa_p) <=> (G((a_p) & (aa_q) & ((a_q) | (F(X(a_pp)))))))) => ((X(((~((~(aaaaa_q)) U (aaaa_p))) R (aaaa_ppp)) => (G((a_q) <=> (~(X(aaaa_q))))))) => ((aa_q) <=> (aaaa_pp))))
+
+exists ppp.exists pp.exists p.forall q.(F(~((aaa_q) & (X(a_q))))) & (G(((X((aaaaa_q) | (G((F(aaa_pp)) => (a_p))))) R (aaa_p)) | (((aaa_p) R (X(~((a_ppp) | (aaaa_pp))))) <=> ((X((a_p) R ((G(aa_p)) U (a_p)))) & (G((aaa_pp) | (G(aaaaa_p))))))))
+
+exists ppp.exists pp.exists p.forall q.X((G((F(aaa_q)) | (~(X(aa_q))))) W (((~((F(X(aa_q))) <=> (~(X(aaa_ppp))))) R (aaa_q)) W ((G((X((a_ppp) | (F(aaaaa_ppp)))) & (X(G(~(aa_q)))))) R (((aaaa_q) U (a_p)) W ((a_q) W (aa_p))))))
+
+exists ppp.exists pp.exists p.forall q.(F(((G(aaaaa_q)) <=> (F(aaa_q))) U (a_q))) | ((X(((aaaa_pp) <=> (X(aaa_q))) => (aaaaa_q))) => ((~(((a_q) | (G(a_q))) R (F(aaa_q)))) & (F(((aa_q) W (G(X(X(aaaaa_pp))))) U ((aaa_p) | ((aa_ppp) R (G(aaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.((aaaaa_pp) <=> (~((aa_pp) | (~(aaaaa_pp))))) <=> ((aaa_p) | (G(F(~(((aa_q) <=> (~(aaa_pp))) W (aaa_ppp))))))
+
+exists ppp.exists pp.exists p.forall q.~(((X(aa_p)) | (~((aaa_q) R ((a_ppp) & (aaa_pp))))) R ((F(((X((~(a_q)) | (F(X(aaaa_q))))) => (a_q)) R (a_p))) U ((((G(aaaaa_ppp)) => (F(a_pp))) U ((F(aaa_q)) W (aaaaa_ppp))) | ((aaaaa_ppp) <=> ((aa_q) R (a_q))))))
+
+exists ppp.exists pp.exists p.forall q.(aaa_pp) | (X(((~(aaaaa_q)) <=> (((aaaa_q) & (aaaaa_q)) R (F((a_q) W (aaaaa_q))))) & (~(F(~((F((X(X((F(aa_q)) R (G(aaaa_q))))) U (~(G(aaaa_p))))) U ((G((aaaa_q) U (aaaaa_p))) R (aaaaa_p)))))))) | (G(aaaaa_ppp))
+
+exists ppp.exists pp.exists p.forall q.F((G((((~(aaaaa_q)) => (aaaaa_q)) U ((F(((aaaaa_q) W (~(aaaa_pp))) U (F(aaa_ppp)))) => (F(aa_pp)))) | (X(((G(((aa_q) => (aaaa_ppp)) <=> (X(aaaa_ppp)))) U (~(G((aaaa_pp) W (F(aaa_pp)))))) W (X(a_ppp)))))) U (X(aa_q)))
+
+exists ppp.exists pp.exists p.forall q.(X(~(G((G(~(G((((aa_ppp) <=> (aaaaa_p)) W (aa_p)) | (X(aaaa_q)))))) | ((aa_pp) <=> (F(G(~((F((aaaa_p) R (X(aaa_q)))) U (aaaa_pp)))))))))) <=> ((X(a_q)) => (G((G(a_q)) W (aaa_pp))))
+
+exists ppp.exists pp.exists p.forall q.((((F(X(aa_q))) => (aaa_q)) W ((F(aaaaa_q)) U (aaaaa_pp))) R (F(aa_p))) & (((a_q) <=> ((aaaa_q) & ((aaaa_p) <=> ((aaaaa_q) => (aaa_q))))) <=> (G(((aa_q) <=> (X(aaaa_pp))) W ((aaaaa_ppp) | ((aaaa_ppp) & (X(a_q)))))))
+
+exists ppp.exists pp.exists p.forall q.(~(F(G((a_p) <=> (G(aaa_q)))))) & (~((~(a_pp)) & ((((aaa_p) | (aaaa_q)) W (F(aaa_pp))) => ((G(((G(aaaaa_pp)) => (X(aaa_p))) U (((aaa_ppp) & (aaaa_q)) <=> (F(aaa_q))))) U ((aaaaa_q) W ((X(aaa_q)) W (aaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.False
+
+exists ppp.exists pp.exists p.forall q.(~((F(aaaaa_pp)) U (aa_pp))) => (G(~(G(~(((aa_q) & (aaaa_q)) <=> ((aaaaa_ppp) | (((aa_pp) | (aaa_q)) W ((X(a_q)) W (X((a_ppp) <=> (aa_q)))))))))))
+
+exists ppp.exists pp.exists p.forall q.X(((X(aaaaa_q)) & (G(X(X(X(aa_p)))))) => ((((X(aa_q)) R ((aaaa_q) | ((aa_q) U (aaaa_q)))) U ((aa_ppp) R (((G(aa_q)) | ((a_p) <=> ((aaaaa_ppp) W (X(aa_q))))) R (G(X(aaaaa_pp)))))) W (~(aaaa_q))))
+
+exists ppp.exists pp.exists p.forall q.~((G(X((aa_q) U (aaaa_pp)))) <=> (((F(a_p)) => (G(aaa_p))) <=> ((X(a_q)) U (a_q))))
+
+exists ppp.exists pp.exists p.forall q.F((aaaa_p) & (((X(aa_q)) | ((aa_pp) <=> (G(aa_q)))) <=> ((aaaa_pp) => ((X(X(((G(aaa_q)) W (aa_p)) W (~(F(a_pp)))))) <=> (X(a_q))))) & ((aaaa_q) <=> ((((~(aaaaa_q)) => (a_q)) R ((aaa_q) | (aaaaa_q))) => (X(a_p)))))
+
+exists ppp.exists pp.exists p.forall q.((F(aa_q)) <=> (F((~(aaaaa_q)) => (~(F(aa_p)))))) W ((((~(aaa_pp)) & (aaaaa_p)) => (~((F((F(a_pp)) R (aaa_q))) W (X((aa_q) W ((aaaaa_q) & (~(aaaaa_q)))))))) R (G((a_ppp) | (~(aaaaa_ppp)) | ((a_q) <=> (aa_ppp)))))
+
+exists ppp.exists pp.exists p.forall q.((((~(a_q)) => (~(aa_ppp))) & (((G((~(aaaa_q)) | (G(aaa_p)))) => (G(aa_ppp))) U (aaaa_q))) R (X((aa_q) <=> ((a_p) | (F(a_pp)))))) | (G((aaaaa_pp) <=> ((aaaaa_p) & ((~(aaaa_q)) | ((aaa_q) W (aaaa_q))))))
+
+exists ppp.exists pp.exists p.forall q.(F(~(((((a_q) => (aaa_q)) | (G(F((aa_pp) | (X(aaaa_q)))))) => (aa_p)) W (X(G(X(X((aa_q) R (aaaa_q))))))))) & (~(G((((aaa_ppp) W (a_pp)) & (X(F((a_q) & (aa_q))))) => (~(F((aa_p) W (aaaaa_pp)))))))
+
+exists ppp.exists pp.exists p.forall q.F((~(G((~(aaa_ppp)) => (((aa_q) R (aaa_q)) | (F(~((((aaa_p) <=> ((a_q) <=> (aa_q))) | ((aa_pp) & (aaaa_q))) <=> (G(aaaa_pp))))))))) => (F(G(F(X((~((G(F(aaaaa_p))) => (~(aaaa_q)))) W (aaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.((~(aaaaa_q)) | ((F(a_q)) W (aaa_q))) <=> (X(((F(aaaaa_p)) | (G(a_pp))) R ((((aaa_q) => (X(a_ppp))) R ((F(~(X(X(aa_q))))) R (~((aa_q) <=> (aaa_p))))) U ((a_q) | (X(aa_q))))))
+
+exists ppp.exists pp.exists p.forall q.G((G(aaaaa_q)) U (X(((G(aa_p)) | (F(~(aaa_q)))) U (~(((a_q) U (aaa_p)) R (((~(aa_q)) W (((a_q) <=> (aaa_ppp)) W (G(aaaaa_q)))) | (((aaaa_q) => (G((aa_q) U (a_ppp)))) & (((aaa_ppp) R (aa_p)) R (G(aaa_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.(~(F((X(F((aaaa_q) => ((G(aaaaa_p)) R (a_q))))) W (X(~(aaa_q)))))) <=> (((a_q) <=> (G(X(aaa_q)))) & ((((aaa_ppp) W (a_pp)) & ((((aa_q) <=> (X(aaaa_q))) R (~(aa_pp))) R ((aaa_p) U (aaaaa_q)))) | ((aa_q) W (aaa_ppp))))
+
+exists ppp.exists pp.exists p.forall q.(aaa_q) R ((((X(~(aaaa_q))) & ((aaaaa_q) U (a_p))) R ((X(aaaaa_q)) | (G(((aa_ppp) <=> (((aaaaa_q) R (F(aaa_p))) | (G(aa_q)))) | ((a_ppp) & (X(G((G(a_q)) => (a_p))))))))) W ((~(aaaa_pp)) & (F(aaa_p))))
+
+exists ppp.exists pp.exists p.forall q.((aaaaa_q) & (G(aaaa_q))) <=> (((a_pp) => (F((aaaa_q) <=> (G((aaaa_q) & ((aaaa_p) W (X(aaaa_p)))))))) & (((X(G(aa_q))) W (~(G(X(aaaaa_q))))) => (((~(a_p)) | (X(aa_p))) & (((aaa_q) | (aaaa_p)) U (a_q)))))
+
+exists ppp.exists pp.exists p.forall q.(((G((aaa_q) <=> (X(aaaa_q)))) & ((~(a_p)) | ((aaaa_q) & (G((aa_q) <=> ((aaa_q) | (aaaa_pp))))))) => (G((X(F((aaaa_ppp) W ((a_q) W (aaa_q))))) W (X((F(G(aaaa_q))) R (a_p)))))) | (((aaaa_q) W (aaa_ppp)) & (G(a_p)))
+
+exists ppp.exists pp.exists p.forall q.((aaa_q) R (G(aa_q))) W ((((G(X(F(aa_q)))) W ((a_p) => (((aaa_q) <=> (aaaa_q)) W ((G(aa_q)) U ((a_pp) R (F(aaaa_p))))))) W (~(G(a_q)))) R ((~(aaaaa_pp)) | (F(X((aaaaa_ppp) | ((a_q) => (aaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.((aaa_q) | ((X((aaa_q) & (~(aaaaa_q)))) W (G((~(aaaa_q)) U ((~(G(aaa_q))) => (X(aaaa_q))))))) => (X((G((aaaaa_p) & (G(aa_q)))) U (G(X(~((X(X(((aaaaa_pp) W (a_p)) U (aaaaa_q)))) W (F(G(aaaa_q)))))))))
+
+exists ppp.exists pp.exists p.forall q.~(G((((a_q) <=> ((a_ppp) | (~((G(~(aaaaa_q))) <=> ((X(aaaaa_q)) => (aaaaa_q)))))) => (G(aa_p))) W (F(((aaa_q) <=> (F((aa_q) | (F(a_p))))) <=> ((aa_ppp) W (((aa_ppp) <=> ((F(aaa_q)) W (aa_p))) W ((aaaa_q) & (aaaaa_p))))))))
+
+exists ppp.exists pp.exists p.forall q.G((X((aa_q) <=> (F(((aaaa_pp) R (F((aa_q) | (~(X(aaaa_ppp)))))) <=> (X(aaa_p)))))) U ((X(F((F(aaa_pp)) W (aaaaa_pp)))) U ((aaa_p) | (aaaaa_ppp) | (F((~(a_q)) & (aaaa_q) & (~(aaaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.((((F(~(aaa_pp))) R (G(aaa_ppp))) R (((aaa_p) W (aa_ppp)) | ((F(~(F(aaaa_pp)))) R (aaaaa_ppp)) | (X(aaaaa_ppp)))) <=> (((a_p) | (X(aaa_pp))) <=> (((G(a_pp)) W (aaaaa_q)) => ((aaaa_q) <=> ((a_pp) | (aaaaa_p)))))) & (G(F(a_q)))
+
+exists ppp.exists pp.exists p.forall q.X(~(((~(((~((aa_pp) U (X(a_q)))) R (~(a_p))) & (X((~(aaaa_q)) => (aa_q))))) W ((G(F(aa_ppp))) | ((aaaaa_q) & (~(X(a_q)))))) | (((aaaaa_pp) & ((a_q) => (aa_q))) <=> (G((aaaa_pp) & ((aaa_q) R (aa_ppp)))))))
+
+exists ppp.exists pp.exists p.forall q.((~(X((X((a_ppp) | (aa_q))) & ((F(aaa_q)) W (F(aa_pp)))))) U (((~(G(X((a_ppp) | (G(~(aaaaa_ppp))))))) U (~(((aaa_pp) => (a_ppp)) <=> (F(~(aa_q)))))) R (aa_q))) U ((aaaaa_q) <=> (G(a_ppp)))
+
+exists ppp.exists pp.exists p.forall q.(a_q) & (aaaa_p) & (X(X(~((aaa_q) | (X(G(aaaa_p))))))) & (X(((F(aaa_q)) R (G(~(X(~((X(a_q)) U (aa_p))))))) <=> ((((aaaa_q) W (aaa_q)) W ((F(a_pp)) => (aa_q))) W ((aa_p) | (aaaa_ppp)))))
+
+exists ppp.exists pp.exists p.forall q.((~(aa_q)) & (~((a_q) W (aaaaa_p)))) W (((a_ppp) & (G(aaa_pp)) & ((aaaa_q) | (F(a_q)))) R (F((((aaaa_q) | (aaaaa_q)) W ((aaaaa_q) => (G((X(aaa_q)) => (aaaaa_q))))) <=> ((X(aa_q)) | ((aaa_pp) U ((aa_pp) => (aaa_p)))))))
+
+exists ppp.exists pp.exists p.forall q.(((X((X(aa_pp)) | (((a_q) & (aaaaa_p)) R (F(aaaa_p))))) <=> ((F(aaaa_ppp)) & (G(~(a_q))))) W (G(aaaaa_q))) <=> (((aaaa_q) <=> (aaaaa_q)) | (F((aaa_q) | (G(X(~(((G(aaa_p)) U (a_ppp)) W (F(G(aa_pp))))))))))
+
+exists ppp.exists pp.exists p.forall q.X(((aaaa_q) | ((((G(aaa_ppp)) U (a_p)) <=> ((~(aaaaa_ppp)) R (G(aa_ppp)))) R (F(aaaa_q))) | ((X(aaaa_pp)) U (aaaa_p))) U (X((G(((X(aa_q)) R (~(a_q))) <=> (X(aaaa_q)))) W ((aaaa_ppp) W ((aaaaa_ppp) & (G(~(aaaa_pp))))))))
+
+exists ppp.exists pp.exists p.forall q.((G((G(aa_q)) U (a_ppp))) R (X(F(G(F(a_p)))))) & ((((X(aaaa_ppp)) U (X(a_ppp))) R ((F(aaaa_q)) & (G(aaa_pp)))) W ((~((G(aa_ppp)) R (~(aaa_q)))) | (F(aaaaa_q))))
+
+exists ppp.exists pp.exists p.forall q.True
+
+exists ppp.exists pp.exists p.forall q.((a_pp) & (X(((aaaaa_q) <=> ((a_ppp) W ((a_q) R ((aaaa_pp) <=> (aaaaa_p))))) | ((a_p) & (G((F(aaaaa_q)) <=> (((a_q) => (aaaa_ppp)) & (~(G(a_q)))))))))) => ((((~(a_q)) <=> ((aaa_q) <=> (aaaaa_q))) W (F(aa_pp))) | (~(X(aaaaa_q))))
+
+exists ppp.exists pp.exists p.forall q.G(((aaaaa_q) U (X(((~(a_q)) | (aa_q)) & ((aa_p) <=> (((aaaaa_ppp) | ((~(a_q)) U (aaa_pp))) U (aaaa_p)))))) U ((F((aaa_ppp) W ((aa_q) W (aaa_q)))) W ((X((~(aaa_q)) & (G((aaaaa_pp) U (aaa_pp))))) U (X(aaaaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.~((X((F(aaa_q)) W ((F(aaaa_q)) => (F(~(F(aa_q))))))) W (((F(~(((aaaaa_p) W (F(aaa_p))) => (a_p)))) & ((aaaaa_q) W ((X(aa_p)) | (X(F(aaaa_ppp)))))) U ((aa_p) | ((aaaa_ppp) U (aa_q)))))
+
+exists ppp.exists pp.exists p.forall q.(((a_q) => ((((aa_q) & (aaaaa_q)) W (G(aaa_ppp))) U (~(aa_ppp)))) <=> ((((aaa_ppp) W (G(~(aaaa_q)))) => ((G(aaaa_pp)) R (aa_pp))) W (G((~(aaa_pp)) => (G((a_p) & (X(aaa_ppp)))))))) R ((aaaaa_ppp) & ((aaaaa_ppp) W (aaaa_pp)))
+
+exists ppp.exists pp.exists p.forall q.F((((a_pp) U (G(X(G(a_pp))))) <=> (X(aaaaa_pp))) <=> (((X(aaa_q)) R (((a_pp) => (aa_ppp)) & (G(F(a_p))))) | ((((~(aaaa_pp)) | (X(aaaa_pp))) U ((aaaa_q) <=> (X(aaaa_q)))) <=> ((aa_p) U (aaa_p)))))
+
+exists ppp.exists pp.exists p.forall q.((a_q) & (aaa_q)) U ((((a_q) => (aaaaa_p)) R (aa_q)) => ((G((~(a_q)) & (((~(a_q)) & (aaa_p)) U ((F(a_pp)) | (X(aa_q)))))) & ((a_q) R (G(aaaaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.X(F(((X(aaa_q)) R ((~((~((a_q) R (aaaaa_p))) | ((X(~(X((aaaa_q) => (aa_q))))) => (G(aa_p))))) & (X((F(X(F(G(aaa_p))))) <=> ((aaa_q) U (a_p)))))) => (G((aaa_q) & (aaaa_ppp)))))
+
+exists ppp.exists pp.exists p.forall q.G(X(((a_q) & (aaaa_ppp)) => ((F((aaa_ppp) <=> (X((aaaa_q) => (X((aaa_q) & (aaaa_q))))))) R (~(F(X(((F(aaaa_ppp)) U (F(aa_pp))) U (F((F(~((G(F(aaaa_q))) R (G(aaaa_q))))) U (F((aaa_q) & (aaaaa_q))))))))))))
+
+exists ppp.exists pp.exists p.forall q.(F((aa_p) R (F(X((aa_q) & (aaa_ppp)))))) & (((G(aaaa_ppp)) U (aaaaa_q)) U (G((~(aaa_q)) & ((((aaa_q) => (aa_q)) <=> ((aa_p) W (((aa_q) | (aaa_q)) => (aa_q)))) U ((aaa_q) & (G((aaaaa_q) & ((aa_q) U (X(a_q))))))))))
+
+exists ppp.exists pp.exists p.forall q.(X(G(((F(X((a_p) W (X(aaa_q))))) => (X(((a_ppp) => ((~(aaaaa_q)) U (aa_p))) <=> ((X(aaaaa_q)) U (G(X((aa_ppp) | (aaaaa_q)))))))) | ((aaaa_p) U ((X(a_q)) U (G(a_q))))))) => ((a_ppp) W (aa_q))
+
+exists ppp.exists pp.exists p.forall q.((((a_pp) U ((a_p) | (aaaaa_q))) U (G((F(aaaaa_q)) => (X(aaaa_pp))))) <=> (((aaaaa_p) W (~(aaa_q))) U (X((aaa_q) & (aaaa_pp))))) W (G((aaa_p) & (aaaaa_q) & ((~((aaa_q) U (X(aaaa_q)))) W ((F(aa_q)) R (aaaa_ppp)))))
+
+exists ppp.exists pp.exists p.forall q.F(((~(((a_pp) | (aa_q)) => (aa_q))) & ((aa_q) | (aaaa_pp))) <=> (((a_pp) & ((((X((F((aa_pp) W (G(aa_p)))) U ((aa_pp) => (aaaaa_pp)))) => ((aa_q) R (X(aaaaa_ppp)))) | (~(X(aaaa_q)))) R (F(aaaa_p)))) R (aaa_p)))
+
+exists ppp.exists pp.exists p.forall q.F((((aaaaa_p) W (aaa_ppp)) W (~((X(G(X(G(F((a_q) & (F(G(aaa_q))))))))) W (aaa_q)))) U (G((G(~((a_q) & (~(aaaa_ppp)) & (aaaaa_pp) & (G(aaaa_q)) & ((aa_q) U (a_p))))) U (F(aaa_pp)))))
+
+exists ppp.exists pp.exists p.forall q.((~(aa_q)) <=> ((F(aaa_q)) R ((aaaaa_pp) => ((aaa_q) U (G(aaaaa_p)))))) W (~((X(aaa_pp)) <=> (G(~(G(a_pp))))))
+
+exists ppp.exists pp.exists p.forall q.~(((((aaa_q) | (aaaaa_q)) <=> ((a_q) => (X(X(aaaaa_p))))) => (~(F(X(F(~(G((a_p) & (aa_q))))))))) <=> (F((((~((a_q) => ((aaaaa_q) | (G(aaaaa_q))))) U (((a_ppp) <=> (aaaaa_q)) & (F(aaaaa_ppp)))) U (aaaa_q)) U (aaa_p))))
+
+exists ppp.exists pp.exists p.forall q.(aaaa_q) & (((((F(aaaaa_q)) R (((aa_q) & (aaa_ppp)) => (X(aaaa_q)))) => (G(F(aaaa_ppp)))) & (X(~(G(~(X((aa_pp) | (F(a_q))))))))) | (((~(aa_q)) => ((aa_ppp) | (aaaaa_ppp))) <=> (F(aa_p))))
+
+exists ppp.exists pp.exists p.forall q.~(G(((aaa_pp) | (((F(aa_pp)) => (aaaaa_q)) => ((~(aaa_ppp)) W (G(aaa_p))))) W ((aaa_p) <=> ((~(aaaa_q)) | (((F(aaaaa_q)) U (aa_q)) => ((aa_ppp) => (~((~((aa_ppp) => (aaaaa_pp))) <=> (F(a_p)))))) | (~((aa_q) W (aaaaa_q)))))))
+
+exists ppp.exists pp.exists p.forall q.(F(aaaaa_q)) & (((F((((aaaaa_q) R (aaaa_pp)) W (F(aa_pp))) => ((aaa_q) <=> (G(aaa_q))))) | (((X(aaaaa_pp)) <=> ((aaaa_q) => ((aaaa_ppp) U (aaaaa_q)))) & (((aaa_q) R (aaaaa_q)) <=> (G(X(aaa_pp)))))) <=> ((aaaa_pp) | (G(aaa_q))))
+
+exists ppp.exists pp.exists p.forall q.G(~((G((aaa_q) <=> (~((aaa_pp) R (aa_ppp))))) & (X((aa_p) | (aaaa_pp) | ((X(aaaaa_pp)) W ((G((X(((aa_pp) => (aaa_q)) & (~(X(~(aaaaa_q)))))) <=> (F(a_q)))) U ((~(aaaa_q)) & (X(aa_q))))) | (X(a_pp))))))
+
+exists ppp.exists pp.exists p.forall q.((aaaa_ppp) R (X(aaaa_pp))) | (((aaaaa_ppp) <=> ((aa_ppp) | (F(aaa_q)))) R (F(((aaaaa_pp) <=> ((~(a_ppp)) <=> (aaaaa_q))) | (~(((aaaaa_p) <=> (X(aaaa_p))) U ((((G(aa_ppp)) R (aaaaa_q)) R (a_q)) & (((aaaa_ppp) <=> (aaaaa_q)) R (aaaa_q))))))))
+
+exists ppp.exists pp.exists p.forall q.((aaaa_ppp) U (aaaaa_ppp)) R ((~(G(~(F((~(F((F(aaa_ppp)) => (G(aa_q))))) <=> (((((aa_q) => (aaaa_pp)) <=> ((a_q) R (X(G(aaa_q))))) | (G(~(aa_p)))) R (~(aaa_p)))))))) U (X(F((X(a_q)) => (aaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.(~(((aa_pp) => (X(F(aa_p)))) | ((~(aaa_q)) R (X(aaaa_ppp))) | (((aaaa_ppp) R (aa_q)) R (((a_p) <=> (((a_pp) <=> (aaa_pp)) | (F(aa_q)))) U (G(X(aaa_p))))))) <=> (G((F(aaa_q)) R (F((aaaa_q) => (aaa_q)))))
+
+exists ppp.exists pp.exists p.forall q.(aaaaa_q) <=> (~(F(X((G(F(((a_q) & (aaaaa_ppp)) <=> ((((~(a_pp)) | (F(aaa_q))) U (((aa_ppp) & (aaaa_pp)) | ((a_q) <=> (aaaa_q)))) <=> (((aaaaa_pp) W (F(G(aaaaa_pp)))) W (aaaaa_q)))))) | ((G(aaaa_q)) R (G(aaa_ppp)))))))
+
+exists ppp.exists pp.exists p.forall q.((aaaa_ppp) U ((aaaaa_ppp) | (X(aaa_q)))) R ((((a_q) R (X(a_q))) U (((aaaa_q) & (X(aa_ppp))) <=> (X(aaa_p)))) U ((aaaa_pp) R (aaaaa_q)))
+
