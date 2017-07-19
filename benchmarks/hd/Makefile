@@ -4,10 +4,10 @@ all:
 	go build hd_gen.go
 
 clean:
-	rm hd_gen cnf.dimacs runsolver_out_* solver_out_* stats_*
+	rm -f hd_gen cnf.dimacs runsolver_out_* solver_out_* stats_*
 
 clean_csv:
-	rm *.csv
+	rm -f *.csv
 
 demo: all
 	./hd_script.sh 120 aalta

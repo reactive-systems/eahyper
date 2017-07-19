@@ -4,10 +4,10 @@ all:
 	go build od_gen.go
 
 clean:
-	rm od_gen cnf.dimacs runsolver_out_* solver_out_* stats_*
+	rm -f od_gen cnf.dimacs runsolver_out_* solver_out_* stats_*
 
 clean_csv:
-	rm *.csv
+	rm -f *.csv
 
 demo: all
 	./od_script.sh 60 aalta pltl

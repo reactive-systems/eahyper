@@ -3,10 +3,10 @@
 all:
 
 clean:
-	rm cnf.dimacs runsolver_out_* solver_out_* stats_*
+	rm -f cnf.dimacs runsolver_out_* solver_out_* stats_*
 
 clean_csv:
-	rm *.csv
+	rm -f *.csv
 
 demo: all
 	./symm_script.sh 60 aalta pltl

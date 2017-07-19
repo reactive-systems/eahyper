@@ -10,7 +10,7 @@ aalta:
 
 clean_aalta:
 	$(MAKE) -C "Aalta_v2.0" clean
-	rm aalta
+	rm -f aalta
 
 pltl:
 	$(MAKE) -C pltl_src all
@@ -18,4 +18,4 @@ pltl:
 
 clean_pltl:
 	$(MAKE) -C pltl_src clean
-	rm pltl
+	rm -f pltl
