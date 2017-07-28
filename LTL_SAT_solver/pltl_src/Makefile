@@ -81,6 +81,7 @@ pltl: $(PLTL_OBJS) pltl$(SUFFIX)
 
 .PHONY: clean
 clean:
+	rm -f pltl
 	find -regextype posix-egrep -regex ".*((\.(cmi|cmo|cma|cmx|o|cmxa))|~)$$" -delete
 
 

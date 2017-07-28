@@ -10,6 +10,9 @@ eahyper:
 clean_eahyper:
 	$(MAKE) -C eahyper_src clean
 
+demo: all
+	$(MAKE) -C eahyper_src demo
+
 runsolver:
 	$(MAKE) -C runsolver_src all
 
@@ -28,7 +31,7 @@ pltl:
 clean_pltl:
 	$(MAKE) -C LTL_SAT_solver clean_pltl
 
-benchmarks:
+benchmarks: runsolver
 	$(MAKE) -C benchmarks all
 
 clean_benchmarks:
