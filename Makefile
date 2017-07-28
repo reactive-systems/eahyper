@@ -10,7 +10,7 @@ eahyper:
 clean_eahyper:
 	$(MAKE) -C eahyper_src clean
 
-demo: all
+demo:
 	$(MAKE) -C eahyper_src demo
 
 runsolver:
