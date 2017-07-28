@@ -1,6 +1,6 @@
-.PHONY: all clean eahyper runsolver aalta pltl benchmarks clean_eahyper clean_runsolver clean_aalta clean_pltl clean_benchmarks
+.PHONY: all clean eahyper runsolver aalta pltl benchmarks clean_eahyper clean_runsolver clean_aalta clean_pltl clean_benchmarks demo
 
-all: eahyper runsolver aalta pltl benchmarks
+all: eahyper aalta pltl
 
 clean: clean_eahyper clean_runsolver clean_aalta clean_pltl clean_benchmarks
 
