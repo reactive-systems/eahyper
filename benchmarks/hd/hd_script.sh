@@ -24,7 +24,7 @@ do
             fi
             echo -n "${i}->${j}," >> "$csv"
             echo "run $solver on hd $i -> hd $j ..."
-            "$RUNSOLVER" -W "$TO" -v "$stats" -o "$so" -w "$rso" "$EAHYPER" -f <(./hd_gen -d "$i") -i <(./hd_gen -d "$j") --make-unique --"$solver" -d "$SOLVER_DIR" &>/dev/null
+            "$RUNSOLVER" -W "$TO" -v "$stats" -o "$so" -w "$rso" "$EAHYPER" -f <(./hd_gen -d "$i") -i <(./hd_gen -d "$j") --"$solver" -d "$SOLVER_DIR" &>/dev/null
             cat "$so"|head -n 1
             if (grep -e '^Maximum wall clock time exceeded' "$rso" >/dev/null)
             then

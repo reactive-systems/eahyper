@@ -243,7 +243,6 @@ let from_file = ref true
 let from_file2 = ref true
 let write_intermediate = ref false
 let intermediate = ref ""
-let make_unique = ref false
 let enable_nnf = ref false
 let dir = ref "."
 
@@ -368,7 +367,14 @@ let check_impl f g =
   if !verbose then
     printf "Check if\n%s\nimplies\n%s\n\n%!" (hyperltl_str f)
       (hyperltl_str g);
-  let (f, g) = if not !make_unique then f, g else uniquify f g in
+  let (f, g) =
+    match
+      intersection (get_trace_variables_prefix f)
+        (get_trace_variables_prefix g)
+    with
+      [] -> f, g
+    | _ -> uniquify f g
+  in
   let (f_exists_list, f_forall_list) = get_trace_variable_lists f in
   let (g_exists_list, g_forall_list) = get_trace_variable_lists g in
   if List.length f_exists_list > 0 && List.length f_forall_list > 0 ||
@@ -479,14 +485,12 @@ let spec_list =
    "The formula to equal.";
    "-wi", Arg.String (fun f -> intermediate := f; write_intermediate := true),
    "The file to write intermediate LTL formula in.";
-   "--make-unique", Arg.Set make_unique,
-   "Make trace variables of different formulae unique. (default: false)";
    "--nnf", Arg.Set enable_nnf,
    "Enable negated normal form representation. (default: false)";
    "-d", Arg.Set_string dir,
    "The directory where the LTL-SAT solvers are located. (default: .)"]
 let arg_failure arg = raise (Arg.Bad ("Bad argument: " ^ arg))
 let usage_msg =
-  "./eahyper.native ((-f formula_file| -fs formula) [(-i formula_file|-is formula)|(-e formula_file|-es formula)] | -m formulae_file [-c n][--cv]) [-d directory] [--aalta|--pltl] [--nnf] [--make-unique] [-v|--verbose] [-wi file]"
+  "./eahyper.native ((-f formula_file| -fs formula) [(-i formula_file|-is formula)|(-e formula_file|-es formula)] | -m formulae_file [-c n][--cv]) [-d directory] [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
 
 let main = Arg.parse spec_list arg_failure usage_msg; !mode_ref ()
