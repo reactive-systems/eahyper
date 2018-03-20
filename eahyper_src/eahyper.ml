@@ -1,6 +1,8 @@
 open Formula
 open Printf
 
+exception Error of string
+
 let verbose = ref false
 
 (* parse a hyperltl_formula out of string `s` *)
@@ -33,7 +35,7 @@ let rec get_trace_variable_lists_ f xs ys =
 let get_trace_variable_lists f = get_trace_variable_lists_ f [] []
 
 (* return list of bound/quantified trace variables of hyperltl_formula `f` *)
-let rec get_trace_variables_in_prefix f =
+let rec get_trace_variables_prefix f =
   let (xs, ys) = get_trace_variable_lists f in xs @ ys
 
 (* return list of atomic propositions of formula `f` *)
@@ -46,58 +48,70 @@ let rec get_atomic_props_ f =
     WeakUntil (f, g) | Release (f, g) ->
       get_atomic_props_ f @ get_atomic_props_ g
 
-let cons_uniq xs x = if List.mem x xs then xs else x :: xs
-(* dedupliate list xs *)
-let remove_from_left xs = List.rev (List.fold_left cons_uniq [] xs)
-
 (* return list of atomic propositions of hyperltl_formula `f` *)
 let rec get_atomic_props f =
-  remove_from_left (get_atomic_props_ (discard_prefix f))
+  let deduplicate xs =
+    let cons_uniq xs x = if List.mem x xs then xs else x :: xs in
+    List.rev (List.fold_left cons_uniq [] xs)
+  in
+  deduplicate (get_atomic_props_ (discard_prefix f))
 
 (* return list of used trace variables of formula `f` *)
-let rec get_trace_variables_in_body_ f =
+let rec get_trace_variables_body_ f =
   match f with
     True | False -> []
   | Var (_, y) -> [y]
-  | Not f | Next f | Finally f | Globally f -> get_trace_variables_in_body_ f
+  | Not f | Next f | Finally f | Globally f -> get_trace_variables_body_ f
   | And (f, g) | Or (f, g) | Impl (f, g) | Equiv (f, g) | Until (f, g) |
     WeakUntil (f, g) | Release (f, g) ->
-      get_trace_variables_in_body_ f @ get_trace_variables_in_body_ g
+      get_trace_variables_body_ f @ get_trace_variables_body_ g
 
 (* return list of used trace variables of hyperltl_formula `f` *)
-let rec get_trace_variables_in_body f =
-  get_trace_variables_in_body_ (discard_prefix f)
+let rec get_trace_variables_body f =
+  get_trace_variables_body_ (discard_prefix f)
 
-
-(* checks if trace variables are unique *)
-let rec check_unique xs =
+(* return list of duplicates in `xs` *)
+let rec duplicates_ acc xs =
   match xs with
-    [] -> ()
+    [] -> acc
   | x :: xs ->
-      if List.mem x xs then raise (Identifier_notunique x); check_unique xs
+      if List.mem x xs then
+        duplicates_ (x :: acc) (List.filter (fun y -> x != y) xs)
+      else duplicates_ acc xs
 
-(* checks if atomic propositions and trace variables are disjunct *)
-let rec check_membership xs ys =
-  let hlp x = if List.mem x ys then raise (Identifier_rebound x) in
-  List.iter hlp xs
+(* wrapper for duplicates_ *)
+let duplicates = duplicates_ []
 
-(* checks if every trace variable is actually bound by a quantifier *)
-let rec check_not_membership xs ys =
-  let hlp x = if not (List.mem x ys) then raise (Identifier_unbound x) in
-  List.iter hlp xs
+(* return intersection of `xs` and `ys` *)
+let intersection xs ys = List.filter (fun x -> List.mem x ys) xs
 
-(* check for sanity of hyperltl_formula `f` *)
-let elab f =
-  let trace_variables = get_trace_variables_in_prefix f in
-  begin try check_unique trace_variables with
-    Identifier_notunique x ->
-      raise
-        (Error
-           ("Trace identifier " ^ x ^
-            " was not unique. Try to run with --make-unique ."))
-  end;
-  check_membership (get_atomic_props f) trace_variables;
-  check_not_membership (get_trace_variables_in_body f) trace_variables
+(* return difference of `xs` and `ys` *)
+let difference xs ys = List.filter (fun x -> not (List.mem x ys)) xs
+
+(* check syntax of hyperltl_formula `f` *)
+let check_syntax f =
+  let exit = ref false in
+  let trace_variables = get_trace_variables_prefix f in
+  (* check if trace variables are unique *)
+  let xs = duplicates trace_variables in
+  List.iter
+    (fun x -> exit := true; printf "trace identifier %s is not unique\n%!" x)
+    xs;
+  (* check if atomic propositions and trace variables are disjunct *)
+  let xs = intersection (get_atomic_props f) trace_variables in
+  List.iter
+    (fun x ->
+       exit := true;
+       printf
+         "identifier %s is used as trace indentifier and as atomic proposition\n%!"
+         x)
+    xs;
+  (* check if every trace variable is actually bound by a quantifier *)
+  let xs = difference (get_trace_variables_body f) trace_variables in
+  List.iter
+    (fun x -> exit := true; printf "trace identifier %s is not defined\n%!" x)
+    xs;
+  if !exit then raise (Error "syntax error")
 
 (* transform an only forall-quantified formula `f` into an equisatisfiable ltl_formula *)
 let rec transform_forall f =
@@ -293,7 +307,7 @@ let rec quantifier_structure f =
 
 (* transform hyperltl_formula `f` into an equisatisfiable ltl_formula depending on `f`'s quantifier structure *)
 let transform formula =
-  elab formula;
+  check_syntax formula;
   let formula = if !enable_nnf then nnf formula else formula in
   let plain_body = discard_prefix formula in
   match quantifier_structure formula with
@@ -353,8 +367,8 @@ let check_impl f g =
   if !verbose then
     printf "Check if\n%s\nimplies\n%s\n\n%!" (hyperltl_str f)
       (hyperltl_str g);
-  elab f;
-  elab g;
+  check_syntax f;
+  check_syntax g;
   let (f, g) = if not !make_unique then f, g else uniquify f g in
   let (f_exists_list, f_forall_list) = get_trace_variable_lists f in
   let (g_exists_list, g_forall_list) = get_trace_variable_lists g in

@@ -37,11 +37,6 @@ type hyperltl_formula =
   | Exists of string * hyperltl_formula
   | Forall of string * hyperltl_formula
 
-exception Identifier_notunique of string
-exception Identifier_rebound of string
-exception Identifier_unbound of string
-exception Error of string
-
 let rec aalta_ltl_str_ buf f =
   let addb = Buffer.add_string buf in
   let rec_ = aalta_ltl_str_ buf in
