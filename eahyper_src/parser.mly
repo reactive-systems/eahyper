@@ -33,13 +33,18 @@
 %start parse_hyperltl_formula
 %type <Formula.hyperltl_formula> parse_hyperltl_formula
 %type <Formula.formula> formula_expr
+%type <string> ap_id
 
 %%
+
+%public ap_id:
+    s=ID                     { s }
+    | s1=ap_id UNDER s2=ID   { s1 ^ "_" ^ s2 }
 
 %public formula_expr:
     | TRUE                                      { True }
     | FALSE                                     { False }
-    | s1=ID UNDER s2=ID                         { Var (s1,s2) }
+    | s1=ap_id UNDER s2=ID                      { Var (s1,s2) }
     | NOT f=formula_expr                        { Not (f) }
     | f=formula_expr AND g=formula_expr         { And (f,g) }
     | f=formula_expr OR g=formula_expr          { Or (f,g) }
