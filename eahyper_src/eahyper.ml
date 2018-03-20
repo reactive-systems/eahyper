@@ -212,7 +212,7 @@ let rec uniquify_ f s =
 (* return new version of hyperltl_formulas `f` and `g` with unique trace variables *)
 let uniquify f g = uniquify_ f "0", uniquify_ g "1"
 
-(* return new version of hyperltl_formulas `f` and `g` with unique trace variables *)
+(* return conjunction of elements in `fs` *)
 let rec construct_conjunction fs =
   match fs with
     [f] -> f
