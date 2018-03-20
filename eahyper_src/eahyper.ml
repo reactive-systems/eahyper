@@ -321,18 +321,21 @@ let transform formula =
 
 let invoke_ref = ref invoke_aalta
 
-let default_mode () =
+let check_sat f =
+  let ltl_formula = transform f in
+  if !verbose then
+    printf "Equisatisfiable LTL formula:\n%s\n\n%!" (ltl_str ltl_formula);
+  !invoke_ref ltl_formula
+
+let sat_mode () =
   let f =
     if !from_file then formula_of_file !formula_file
     else formula_of_string !formula_string
   in
-  if !verbose then printf "HyperLTL formula:\n%s\n\n%!" (hyperltl_str f);
-  let sat =
-    let ltl_formula = transform f in
-    if !verbose then
-      printf "Equisatisfiable LTL formula:\n%s\n\n%!" (ltl_str ltl_formula);
-    !invoke_ref ltl_formula
-  in
+  if !verbose then
+    printf "Check satisfiability of HyperLTL formula:\n%s\n\n%!"
+      (hyperltl_str f);
+  let sat = check_sat f in
   if !verbose then
     match sat with
       true -> printf "%s\nis satisfiable\n%!" (hyperltl_str f)
@@ -359,7 +362,7 @@ let multi_mode () =
         i := !i + 1;
         if !show_number && not !only_one then printf "formula(%d):\n%!" !i;
         if not !only_one || !only_one && !c_ref == !i then
-          begin formula_string := line; default_mode () end
+          begin formula_string := line; sat_mode () end
   in
   List.iter handle_line lines
 
@@ -396,13 +399,7 @@ let check_impl f g =
   in
   if !verbose then
     printf "Check if\n%s\nis unsatisfiable\n\n%!" (hyperltl_str neg_impl);
-  let sat =
-    let ltl_formula = transform neg_impl in
-    if !verbose then
-      printf "Equisatisfiable LTL formula:\n%s\n\n%!" (ltl_str ltl_formula);
-    !invoke_ref ltl_formula
-  in
-  not sat
+  not (check_sat neg_impl)
 
 let impl_mode () =
   let f =
@@ -451,7 +448,7 @@ let equiv_mode () =
           (hyperltl_str g);
       printf "is not equivalent\n%!"
 
-let mode_ref = ref default_mode
+let mode_ref = ref sat_mode
 
 let spec_list =
   ["-f", Arg.String (fun f -> formula_file := f; from_file := true),
