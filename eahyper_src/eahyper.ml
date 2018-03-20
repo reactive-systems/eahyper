@@ -245,8 +245,6 @@ let formula_file = ref ""
 let formula_file2 = ref ""
 let from_file = ref true
 let from_file2 = ref true
-let use_pltl = ref false
-let use_aalta = ref false
 let write_intermediate = ref false
 let intermediate = ref ""
 let make_unique = ref false
@@ -425,20 +423,12 @@ let equiv_mode () =
 
 let mode_ref = ref default_mode
 
-let show_help = ref true
-
 let spec_list =
-  ["-f",
-   Arg.String
-     (fun f -> formula_file := f; from_file := true; show_help := false),
+  ["-f", Arg.String (fun f -> formula_file := f; from_file := true),
    "The file containing the formula to check.";
-   "-fs",
-   Arg.String
-     (fun f -> formula_string := f; from_file := false; show_help := false),
+   "-fs", Arg.String (fun f -> formula_string := f; from_file := false),
    "The formula to check.";
-   "-m",
-   Arg.String
-     (fun f -> formula_file := f; mode_ref := multi_mode; show_help := false),
+   "-m", Arg.String (fun f -> formula_file := f; mode_ref := multi_mode),
    "The file containing multiple formulae to check.";
    "-c", Arg.Int (fun c -> c_ref := c; only_one := true),
    "The number of the formula to check in multi mode.";
@@ -475,6 +465,4 @@ let arg_failure arg = raise (Arg.Bad ("Bad argument: " ^ arg))
 let usage_msg =
   "./eahyper.native ((-f formula_file| -fs formula) [(-i formula_file|-is formula)|(-e formula_file|-es formula)] | -m formulae_file [-c n][--cv]) [-d directory] [--aalta|--pltl] [--nnf] [--make-unique] [-v|--verbose] [-wi file]"
 
-let main =
-  Arg.parse spec_list arg_failure usage_msg;
-  if !show_help then Arg.usage spec_list usage_msg else !mode_ref ()
+let main = Arg.parse spec_list arg_failure usage_msg; !mode_ref ()
