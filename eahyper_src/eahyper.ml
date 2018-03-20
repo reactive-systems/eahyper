@@ -241,6 +241,9 @@ let formula_file = ref ""
 let formula_file2 = ref ""
 let from_file = ref true
 let from_file2 = ref true
+let do_reflexive = ref false
+let do_symmetric = ref false
+let do_transitive = ref false
 let write_intermediate = ref false
 let intermediate = ref ""
 let enable_nnf = ref false
@@ -448,6 +451,130 @@ let equiv_mode () =
           (hyperltl_str g);
       printf "is not equivalent\n%!"
 
+let check_reflexive f =
+  if !verbose then
+    printf "Check reflexivity of HyperLTL formula:\n%s\n\n%!"
+      (hyperltl_str f);
+  let modified_f =
+    let (_, forall_list) = get_trace_variable_lists f in
+    let body = discard_prefix f in
+    let x = List.hd forall_list in
+    let replaced_body =
+      let rplc f y = replace f y ("_" ^ x) in
+      List.fold_left rplc body forall_list
+    in
+    Exists ("_" ^ x, Body (Not replaced_body))
+  in
+  if !verbose then
+    printf "Check if\n%s\nis unsatisfiable\n\n%!" (hyperltl_str modified_f);
+  not (check_sat modified_f)
+
+let check_symmetric f =
+  if !verbose then
+    printf "Check symmetry of HyperLTL formula:\n%s\n\n%!" (hyperltl_str f);
+  let modified_f =
+    let (_, forall_list) = get_trace_variable_lists f in
+    let exists_list = List.map (fun x -> "_" ^ x) forall_list in
+    let body = discard_prefix f in
+    let replaced_body =
+      List.fold_left2 replace body forall_list exists_list
+    in
+    let transposed_symm =
+      let transposed_body =
+        let transpose_1_2 =
+          function
+            x :: y :: xs -> y :: x :: xs
+          | xs -> xs
+        in
+        List.fold_left2 replace body forall_list (transpose_1_2 exists_list)
+      in
+      Impl (replaced_body, transposed_body)
+    in
+    let symm_body =
+      if List.length forall_list == 2 then transposed_symm
+      else
+        let cycled_symm =
+          let n_cycled_body =
+            let rotate_1 =
+              function
+                x :: xs -> xs @ [x]
+              | xs -> xs
+            in
+            List.fold_left2 replace body forall_list (rotate_1 exists_list)
+          in
+          Impl (replaced_body, n_cycled_body)
+        in
+        And (transposed_symm, cycled_symm)
+    in
+    let add_exists id f = Exists (id, f) in
+    List.fold_right add_exists exists_list (Body (Not symm_body))
+  in
+  if !verbose then
+    printf "Check if\n%s\nis unsatisfiable\n\n%!" (hyperltl_str modified_f);
+  not (check_sat modified_f)
+
+let check_transitive f =
+  if !verbose then
+    printf "Check transitivity of HyperLTL formula:\n%s\n\n%!"
+      (hyperltl_str f);
+  let (_, forall_list) = get_trace_variable_lists f in
+  if List.length forall_list != 2 then
+    raise (Error "transitivity only defined for two forall quantifiers");
+  let modified_f =
+    let (x, y) = List.nth forall_list 0, List.nth forall_list 1 in
+    let body = discard_prefix f in
+    let left = replace (replace body x "_x") y "_y" in
+    let middle = replace (replace body x "_y") y "_z" in
+    let right = replace (replace body x "_x") y "_z" in
+    Exists
+      ("_x",
+       Exists
+         ("_y", Exists ("_z", Body (Not (Impl (And (left, middle), right))))))
+  in
+  if !verbose then
+    printf "Check if\n%s\nis unsatisfiable\n\n%!" (hyperltl_str modified_f);
+  not (check_sat modified_f)
+
+let check_relations f =
+  if !do_reflexive then
+    begin match check_reflexive f with
+      false ->
+        if !verbose then printf "%s\nnot reflexive\n\n%!" (hyperltl_str f)
+        else printf "not reflexive\n%!"
+    | true ->
+        if !verbose then printf "%s\nreflexive\n\n%!" (hyperltl_str f)
+        else printf "reflexive\n%!"
+    end;
+  if !do_symmetric then
+    begin match check_symmetric f with
+      false ->
+        if !verbose then printf "%s\nnot symmetric\n\n%!" (hyperltl_str f)
+        else printf "not symmetric\n%!"
+    | true ->
+        if !verbose then printf "%s\nsymmetric\n\n%!" (hyperltl_str f)
+        else printf "symmetric\n%!"
+    end;
+  if !do_transitive then
+    match check_transitive f with
+      false ->
+        if !verbose then printf "%s\nnot transitive\n\n%!" (hyperltl_str f)
+        else printf "not transitive\n%!"
+    | true ->
+        if !verbose then printf "%s\ntransitive\n\n%!" (hyperltl_str f)
+        else printf "transitive\n%!"
+
+let relations_mode () =
+  let f =
+    if !from_file then formula_of_file !formula_file
+    else formula_of_string !formula_string
+  in
+  if !verbose then printf "HyperLTL formula:\n%s\n\n%!" (hyperltl_str f);
+  begin match quantifier_structure f with
+    ForallOnly -> ()
+  | _ -> raise (Error "only forall quantifiers allowed")
+  end;
+  check_relations f
+
 let mode_ref = ref sat_mode
 
 let spec_list =
@@ -480,6 +607,24 @@ let spec_list =
      (fun e ->
         formula_string2 := e; from_file2 := false; mode_ref := equiv_mode),
    "The formula to equal.";
+   "-r",
+   Arg.Unit (fun () -> mode_ref := relations_mode; do_reflexive := true),
+   "Test for reflexivity.";
+   "--reflexive",
+   Arg.Unit (fun () -> mode_ref := relations_mode; do_reflexive := true),
+   "Test for reflexivity.";
+   "-s",
+   Arg.Unit (fun () -> mode_ref := relations_mode; do_symmetric := true),
+   "Test for symmetry.";
+   "--symmetric",
+   Arg.Unit (fun () -> mode_ref := relations_mode; do_symmetric := true),
+   "Test for symmetricy.";
+   "-t",
+   Arg.Unit (fun () -> mode_ref := relations_mode; do_transitive := true),
+   "Test for transitivity.";
+   "--transitive",
+   Arg.Unit (fun () -> mode_ref := relations_mode; do_transitive := true),
+   "Test for transitivity.";
    "-wi", Arg.String (fun f -> intermediate := f; write_intermediate := true),
    "The file to write intermediate LTL formula in.";
    "--nnf", Arg.Set enable_nnf,
@@ -488,6 +633,6 @@ let spec_list =
    "The directory where the LTL-SAT solvers are located. (default: .)"]
 let arg_failure arg = raise (Arg.Bad ("Bad argument: " ^ arg))
 let usage_msg =
-  "./eahyper.native ((-f formula_file| -fs formula) [(-i formula_file|-is formula)|(-e formula_file|-es formula)] | -m formulae_file [-c n][--cv]) [-d directory] [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
+  "./eahyper.native ((-f formula_file|-fs formula) ([(-i formula_file|-is formula)|(-e formula_file|-es formula)] | [-r|--reflexive] [-s|--symmetric] [-t|--transitive])) | (-m formulae_file [-c n][--cv]) [-d directory] [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
 
 let main = Arg.parse spec_list arg_failure usage_msg; !mode_ref ()
