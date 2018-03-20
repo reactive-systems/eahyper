@@ -5,16 +5,6 @@ exception Error of string
 
 let verbose = ref false
 
-(* parse a hyperltl_formula out of string `s` *)
-let formula_of_string s =
-  Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_string s)
-
-(* parse a hyperltl_formula out of file `file` *)
-let formula_of_file file =
-  let ic = open_in file in
-  let f = Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_channel ic) in
-  close_in ic; f
-
 (* return body of hyperltl_formula `f` *)
 let rec discard_prefix f =
   match f with
@@ -112,6 +102,17 @@ let check_syntax f =
     (fun x -> exit := true; printf "trace identifier %s is not defined\n%!" x)
     xs;
   if !exit then raise (Error "syntax error")
+
+(* parse a hyperltl_formula out of string `s` *)
+let formula_of_string s =
+  let f = Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_string s) in
+  check_syntax f; f
+
+(* parse a hyperltl_formula out of file `file` *)
+let formula_of_file file =
+  let ic = open_in file in
+  let f = Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_channel ic) in
+  close_in ic; check_syntax f; f
 
 (* transform an only forall-quantified formula `f` into an equisatisfiable ltl_formula *)
 let rec transform_forall f =
@@ -367,8 +368,6 @@ let check_impl f g =
   if !verbose then
     printf "Check if\n%s\nimplies\n%s\n\n%!" (hyperltl_str f)
       (hyperltl_str g);
-  check_syntax f;
-  check_syntax g;
   let (f, g) = if not !make_unique then f, g else uniquify f g in
   let (f_exists_list, f_forall_list) = get_trace_variable_lists f in
   let (g_exists_list, g_forall_list) = get_trace_variable_lists g in
