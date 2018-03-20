@@ -86,25 +86,6 @@ let rec check_not_membership xs ys =
   let hlp x = if not (List.mem x ys) then raise (Identifier_unbound x) in
   List.iter hlp xs
 
-(* (true, true) -> exists-forall formula
-   (true, false) -> exists only formula
-   (false, true) -> forall only formula
-   (false, false) -> no quantifiers
-*)
-let rec check_quantifier_structure_ exists_seen forall_seen f =
-  match f with
-    Body _ -> exists_seen, forall_seen
-  | Exists (_, f) ->
-      if forall_seen then
-        raise
-          (Error
-             "at most one quantifier alternation, starting with exist, allowed")
-      else check_quantifier_structure_ true false f
-  | Forall (_, f) -> check_quantifier_structure_ exists_seen true f
-
-(* wrapper for check_quantifier_structure_ *)
-let check_quantifier_structure = check_quantifier_structure_ false false
-
 (* check for sanity of hyperltl_formula `f` *)
 let elab f =
   let trace_variables = get_trace_variables_in_prefix f in
@@ -283,16 +264,46 @@ let invoke_aalta f =
   invoke_tool "Aalta_v2.0" "aalta" (aalta_ltl_str f)
     (fun o -> not (str_contains o "unsat"))
 
+type q_structure =
+  None | ExistsOnly | ForallOnly | ExistsForall | ForallExist | Alternating
+
+(* return the quantifier structure of hyperltl_formula `f` *)
+let rec quantifier_structure f =
+  match f with
+    Body _ -> None
+  | Exists (_, f) ->
+      let qs = quantifier_structure f in
+      begin match qs with
+        None -> ExistsOnly
+      | ExistsOnly -> ExistsOnly
+      | ForallOnly -> ExistsForall
+      | ExistsForall -> ExistsForall
+      | ForallExist -> Alternating
+      | Alternating -> Alternating
+      end
+  | Forall (_, f) ->
+      let qs = quantifier_structure f in
+      match qs with
+        None -> ForallOnly
+      | ExistsOnly -> ForallExist
+      | ForallOnly -> ForallOnly
+      | ExistsForall -> Alternating
+      | ForallExist -> ForallExist
+      | Alternating -> Alternating
+
 (* transform hyperltl_formula `f` into an equisatisfiable ltl_formula depending on `f`'s quantifier structure *)
 let transform formula =
-  let quantifier_structure = check_quantifier_structure formula in
   elab formula;
   let formula = if !enable_nnf then nnf formula else formula in
   let plain_body = discard_prefix formula in
-  match quantifier_structure with
-    false, _ -> transform_forall plain_body
-  | true, false -> transform_exists plain_body
-  | true, true -> transform_exists_forall formula
+  match quantifier_structure formula with
+    None | ForallOnly -> transform_forall plain_body
+  | ExistsOnly -> transform_exists plain_body
+  | ExistsForall -> transform_exists_forall formula
+  | _ ->
+      raise
+        (Error
+           "at most one quantifier alternation, starting with exists, allowed")
 
 let invoke_ref = ref invoke_aalta
 
