@@ -312,13 +312,7 @@ let default_mode () =
     match sat with
       true -> printf "%s\nis satisfiable\n%!" (hyperltl_str f)
     | false -> printf "%s\nis not satisfiable\n%!" (hyperltl_str f)
-  else print_endline (bool2sat_str sat)
-
-let get_lines file =
-  let lines = ref [] in
-  let chan = open_in !formula_file in
-  try while true do lines := input_line chan :: !lines done; [] with
-    End_of_file -> close_in chan; List.rev !lines
+  else printf "%s\n%!" (bool2sat_str sat)
 
 let c_ref = ref 0
 let only_one = ref false
@@ -326,6 +320,12 @@ let show_number = ref false
 
 let multi_mode () =
   from_file := false;
+  let lines =
+    let lines_ref = ref [] in
+    let chan = open_in !formula_file in
+    try while true do lines_ref := input_line chan :: !lines_ref done; [] with
+      End_of_file -> close_in chan; List.rev !lines_ref
+  in
   let i = ref 0 in
   let handle_line line =
     match line with
@@ -336,7 +336,7 @@ let multi_mode () =
         if not !only_one || !only_one && !c_ref == !i then
           begin formula_string := line; default_mode () end
   in
-  List.iter handle_line (get_lines !formula_file)
+  List.iter handle_line lines
 
 let check_impl f g =
   if !verbose then
