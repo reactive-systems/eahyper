@@ -4,7 +4,7 @@
 
 See also https://www.react.uni-saarland.de/tools/eahyper/.
 
-Copyright © 2017 Christopher Hahn, Marvin Stenger ([Reactive Systems Group](https://www.react.uni-saarland.de/) @ [Saarland University](http://www.uni-saarland.de/nc/en/home.html))
+Copyright © 2017, 2018 Christopher Hahn, Marvin Stenger ([Reactive Systems Group](https://www.react.uni-saarland.de/) @ [Saarland University](http://www.uni-saarland.de/nc/en/home.html))
 
 ### Background
 Hyperproperties generalize properties of individual computation traces in that they relate such traces to each other. This is needed to express information flow security policies, such as observational determinism: A systems behavior should appear to be deterministic to an external observer, i.e., there should be no information leakage of certain secrets into the public domain.
