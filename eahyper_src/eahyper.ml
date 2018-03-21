@@ -1,8 +1,6 @@
 open Formula
 open Printf
 
-exception Error of string
-
 let verbose = ref false
 
 (* return body of hyperltl_formula `f` *)
@@ -80,28 +78,30 @@ let difference xs ys = List.filter (fun x -> not (List.mem x ys)) xs
 
 (* check syntax of hyperltl_formula `f` *)
 let check_syntax f =
-  let exit = ref false in
+  let error = ref false in
   let trace_variables = get_trace_variables_prefix f in
   (* check if trace variables are unique *)
   let xs = duplicates trace_variables in
   List.iter
-    (fun x -> exit := true; printf "trace identifier %s is not unique\n%!" x)
+    (fun x ->
+       error := true; eprintf "trace identifier %S is not unique\n%!" x)
     xs;
   (* check if atomic propositions and trace variables are disjunct *)
   let xs = intersection (get_atomic_props f) trace_variables in
   List.iter
     (fun x ->
-       exit := true;
-       printf
-         "identifier %s is used as trace indentifier and as atomic proposition\n%!"
+       error := true;
+       eprintf
+         "identifier %S is used as trace identifier and as atomic proposition\n%!"
          x)
     xs;
   (* check if every trace variable is actually bound by a quantifier *)
   let xs = difference (get_trace_variables_body f) trace_variables in
   List.iter
-    (fun x -> exit := true; printf "trace identifier %s is not defined\n%!" x)
+    (fun x ->
+       error := true; eprintf "trace identifier %S is not defined\n%!" x)
     xs;
-  if !exit then raise (Error "syntax error")
+  if !error then exit 1
 
 (* parse a hyperltl_formula out of string `s` *)
 let formula_of_string s =
@@ -211,9 +211,9 @@ let uniquify f g = uniquify_ f "0", uniquify_ g "1"
 (* return conjunction of elements in `fs` *)
 let rec construct_conjunction fs =
   match fs with
-    [f] -> f
+    [] -> True
+  | [f] -> f
   | f :: fr -> And (f, construct_conjunction fr)
-  | _ -> raise (Error "This should never happen.")
 
 (* transform exists-forall-quantified hyperltl_formula `formula` into equisatisfiable ltl_formula *)
 let transform_exists_forall formula =
@@ -318,9 +318,9 @@ let transform formula =
   | ExistsOnly -> transform_exists plain_body
   | ExistsForall -> transform_exists_forall formula
   | _ ->
-      raise
-        (Error
-           "at most one quantifier alternation, starting with exists, allowed")
+      eprintf
+        "at most one quantifier alternation, starting with exists, allowed\n%!";
+      exit 1
 
 let invoke_ref = ref invoke_aalta
 
@@ -386,9 +386,11 @@ let check_impl f g =
   if List.length f_exists_list > 0 && List.length f_forall_list > 0 ||
      List.length g_exists_list > 0 && List.length g_forall_list > 0
   then
-    raise
-      (Error
-         "only alternation-free HyperLTL formulas allowed for implication or equivalence checking");
+    begin
+      eprintf
+        "only alternation-free HyperLTL formulas allowed for implication or equivalence checking";
+      exit 1
+    end;
   let neg_impl =
     let neg_impl_body =
       Body (And (discard_prefix f, Not (discard_prefix g)))
@@ -519,7 +521,10 @@ let check_transitive f =
       (hyperltl_str f);
   let (_, forall_list) = get_trace_variable_lists f in
   if List.length forall_list != 2 then
-    raise (Error "transitivity only defined for two forall quantifiers");
+    begin
+      eprintf "transitivity only defined for two forall quantifiers\n%!";
+      exit 1
+    end;
   let modified_f =
     let (x, y) = List.nth forall_list 0, List.nth forall_list 1 in
     let body = discard_prefix f in
@@ -571,7 +576,9 @@ let relations_mode () =
   if !verbose then printf "HyperLTL formula:\n%s\n\n%!" (hyperltl_str f);
   begin match quantifier_structure f with
     ForallOnly -> ()
-  | _ -> raise (Error "only forall quantifiers allowed")
+  | _ ->
+      eprintf "only forall quantifiers allowed for relation analysis\n%!";
+      exit 1
   end;
   check_relations f
 
