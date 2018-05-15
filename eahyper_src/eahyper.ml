@@ -247,7 +247,7 @@ let do_transitive = ref false
 let write_intermediate = ref false
 let intermediate = ref ""
 let enable_nnf = ref false
-let dir = ref "."
+let solver_dir = ref "."
 
 (* helper function to invoke an LTL-SAT solver *)
 let invoke_tool name cmd formula analyse_output =
@@ -256,7 +256,7 @@ let invoke_tool name cmd formula analyse_output =
     begin let oc = open_out !intermediate in
       output_string oc formula; close_out oc
     end;
-  let (ic, oc) = Unix.open_process (!dir ^ "/" ^ cmd) in
+  let (ic, oc) = Unix.open_process (!solver_dir ^ "/" ^ cmd) in
   output_string oc formula;
   close_out oc;
   let buf = Buffer.create 16 in
@@ -644,14 +644,16 @@ let spec_list =
    "-wi", Arg.String (fun f -> intermediate := f; write_intermediate := true),
    "The file to write intermediate LTL formula in.";
    "--nnf", Arg.Set enable_nnf,
-   "Enable negated normal form representation. (default: false)";
-   "-d", Arg.Set_string dir,
-   "The directory where the LTL-SAT solvers are located. (default: .)"]
+   "Enable negated normal form representation. (default: false)"]
 let arg_failure arg = raise (Arg.Bad ("Bad argument: " ^ arg))
 let usage_msg =
-  "./eahyper.native ((-f formula_file|-fs formula) ([(-i formula_file|-is formula)|(-e formula_file|-es formula)] | [-r|--reflexive] [-s|--symmetric] [-t|--transitive])) | (-m formulae_file [-c n][--cv]) [-d directory] [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
+  "./eahyper.native ((-f formula_file|-fs formula) ([(-i formula_file|-is formula)|(-e formula_file|-es formula)] | [-r|--reflexive] [-s|--symmetric] [-t|--transitive])) | (-m formulae_file [-c n][--cv]) [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
 
 let main =
+  begin match Sys.getenv_opt "EAHYPER_SOLVER_DIR" with
+    None -> solver_dir := "."
+  | Some dir -> solver_dir := dir
+  end;
   Arg.parse spec_list arg_failure usage_msg;
   if !print_usage then begin Arg.usage spec_list usage_msg; exit 1 end;
   !mode_ref ()
