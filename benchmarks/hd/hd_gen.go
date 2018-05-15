@@ -21,32 +21,38 @@ func print_forall() {
 }
 func print_in_not_equiv() func() {
 	return func() {
+		fmt.Printf("(")
 		for in := uint(0); in < n_in; in++ {
 			if in > 0 {
 				fmt.Printf(" | ")
 			}
 			fmt.Printf("!(in%v_%v%v <-> in%v_%v%v)", in, pi, 0, in, pi, 1)
 		}
+		fmt.Printf(")")
 	}
 }
 func print_out_equiv() func() {
 	return func() {
+		fmt.Printf("(")
 		for out := uint(0); out < n_out; out++ {
 			if out > 0 {
 				fmt.Printf(" & ")
 			}
 			fmt.Printf("(out%v_%v%v <-> out%v_%v%v)", out, pi, 0, out, pi, 1)
 		}
+		fmt.Printf(")")
 	}
 }
 func print_out_not_equiv() func() {
 	return func() {
+		fmt.Printf("(")
 		for out := uint(0); out < n_out; out++ {
 			if out > 0 {
 				fmt.Printf(" | ")
 			}
 			fmt.Printf("!(out%v_%v%v <-> out%v_%v%v)", out, pi, 0, out, pi, 1)
 		}
+		fmt.Printf(")")
 	}
 }
 func print_next(f func()) func() {
