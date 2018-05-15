@@ -2,7 +2,7 @@
 
 RUNSOLVER="../../runsolver_src/runsolver"
 EAHYPER="../../eahyper_src/eahyper.native"
-SOLVER_DIR="../../LTL_SAT_solver"
+EAHYPER_SOLVER_DIR="../../LTL_SAT_solver"
 
 stats=stats_$$
 so=solver_out_$$
@@ -25,7 +25,7 @@ do
         else
             echo -n "$i," >> "$csv"
             echo "run $solver on $FILE formula #$i ..."
-            "$RUNSOLVER" -W "$TO" -v "$stats" -o "$so" -w "$rso" "$EAHYPER" -m "$FILEPATH" -c $i --"$solver" -d "$SOLVER_DIR" &>/dev/null
+            "$RUNSOLVER" -W "$TO" -v "$stats" -o "$so" -w "$rso" "$EAHYPER" -m "$FILEPATH" -c $i --"$solver" &>/dev/null
             cat "$so"|head -n 1
             if (grep -e '^Maximum wall clock time exceeded' "$rso" >/dev/null)
             then
