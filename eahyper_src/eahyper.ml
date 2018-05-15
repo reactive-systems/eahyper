@@ -582,14 +582,23 @@ let relations_mode () =
   end;
   check_relations f
 
+
+let print_usage = ref true
 let mode_ref = ref sat_mode
 
 let spec_list =
-  ["-f", Arg.String (fun f -> formula_file := f; from_file := true),
+  ["-f",
+   Arg.String
+     (fun f -> formula_file := f; from_file := true; print_usage := false),
    "The file containing the formula to check.";
-   "-fs", Arg.String (fun f -> formula_string := f; from_file := false),
+   "-fs",
+   Arg.String
+     (fun f -> formula_string := f; from_file := false; print_usage := false),
    "The formula to check.";
-   "-m", Arg.String (fun f -> formula_file := f; mode_ref := multi_mode),
+   "-m",
+   Arg.String
+     (fun f ->
+        formula_file := f; mode_ref := multi_mode; print_usage := false),
    "The file containing multiple formulae to check.";
    "-c", Arg.Int (fun c -> c_ref := c; only_one := true),
    "The number of the formula to check in multi mode.";
@@ -642,4 +651,7 @@ let arg_failure arg = raise (Arg.Bad ("Bad argument: " ^ arg))
 let usage_msg =
   "./eahyper.native ((-f formula_file|-fs formula) ([(-i formula_file|-is formula)|(-e formula_file|-es formula)] | [-r|--reflexive] [-s|--symmetric] [-t|--transitive])) | (-m formulae_file [-c n][--cv]) [-d directory] [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
 
-let main = Arg.parse spec_list arg_failure usage_msg; !mode_ref ()
+let main =
+  Arg.parse spec_list arg_failure usage_msg;
+  if !print_usage then begin Arg.usage spec_list usage_msg; exit 1 end;
+  !mode_ref ()
