@@ -247,7 +247,7 @@ let do_transitive = ref false
 let write_intermediate = ref false
 let intermediate = ref ""
 let enable_nnf = ref false
-let solver_dir = ref "."
+let solver_dir = ref ""
 
 (* helper function to invoke an LTL-SAT solver *)
 let invoke_tool name cmd formula analyse_output =
@@ -651,7 +651,9 @@ let usage_msg =
 
 let main =
   begin match Sys.getenv_opt "EAHYPER_SOLVER_DIR" with
-    None -> solver_dir := "."
+    None | Some "" ->
+      eprintf "EAHYPER_SOLVER_DIR environment variable was not set\n%!";
+      exit 1
   | Some dir -> solver_dir := dir
   end;
   Arg.parse spec_list arg_failure usage_msg;
