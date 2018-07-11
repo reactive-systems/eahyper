@@ -106,6 +106,7 @@ let check_syntax f =
 type inputT =
     String of string
   | File of string
+  | Stdin
 
 let formula_of_input input =
   let f =
@@ -120,6 +121,7 @@ let formula_of_input input =
       File file -> formula_of_channel (open_in file)
     | String str ->
         Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_string str)
+    | Stdin -> formula_of_channel stdin
   in
   check_syntax f; f
 
@@ -359,7 +361,8 @@ let multi_mode () =
   let ic =
     match !input with
       File file -> open_in file
-    | _ -> eprintf "multi mode expects input via file\n%!"; exit 1
+    | Stdin -> stdin
+    | _ -> eprintf "multi mode expects input via file or stdin\n%!"; exit 1
   in
   let lines =
     let lines_ref = ref [] in
@@ -585,6 +588,8 @@ let spec_list =
    "The file containing the formula to check.";
    "-fs", Arg.String (fun f -> input := String f; print_usage := false),
    "The formula to check.";
+   "--stdin", Arg.Unit (fun () -> input := Stdin; print_usage := false),
+   "Read formula from stdin.";
    "-m",
    Arg.String
      (fun f -> input := File f; mode_ref := multi_mode; print_usage := false),
