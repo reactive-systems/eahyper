@@ -103,16 +103,25 @@ let check_syntax f =
     xs;
   if !error then exit 1
 
-(* parse a hyperltl_formula out of string `s` *)
-let formula_of_string s =
-  let f = Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_string s) in
-  check_syntax f; f
+type inputT =
+    String of string
+  | File of string
 
-(* parse a hyperltl_formula out of file `file` *)
-let formula_of_file file =
-  let ic = open_in file in
-  let f = Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_channel ic) in
-  close_in ic; check_syntax f; f
+let formula_of_input input =
+  let f =
+    let formula_of_channel ic =
+      (* parse a hyperltl_formula from channel `ic` *)
+      let f =
+        Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_channel ic)
+      in
+      close_in ic; f
+    in
+    match input with
+      File file -> formula_of_channel (open_in file)
+    | String str ->
+        Parser.parse_hyperltl_formula Lexer.lex (Lexing.from_string str)
+  in
+  check_syntax f; f
 
 (* transform an only forall-quantified formula `f` into an equisatisfiable ltl_formula *)
 let rec transform_forall f =
@@ -235,12 +244,8 @@ let transform_exists_forall formula =
 
 let bool2sat_str sat = if sat then "sat" else "unsat"
 
-let formula_string = ref ""
-let formula_string2 = ref ""
-let formula_file = ref ""
-let formula_file2 = ref ""
-let from_file = ref true
-let from_file2 = ref true
+let input = ref (File "")
+let input2 = ref (File "")
 let do_reflexive = ref false
 let do_symmetric = ref false
 let do_transitive = ref false
@@ -335,10 +340,7 @@ let check_sat f =
   !invoke_ref ltl_formula
 
 let sat_mode () =
-  let f =
-    if !from_file then formula_of_file !formula_file
-    else formula_of_string !formula_string
-  in
+  let f = formula_of_input !input in
   if !verbose then
     printf "Check satisfiability of HyperLTL formula:\n%s\n\n%!"
       (hyperltl_str f);
@@ -354,12 +356,15 @@ let only_one = ref false
 let show_number = ref false
 
 let multi_mode () =
-  from_file := false;
+  let ic =
+    match !input with
+      File file -> open_in file
+    | _ -> eprintf "multi mode expects input via file\n%!"; exit 1
+  in
   let lines =
     let lines_ref = ref [] in
-    let chan = open_in !formula_file in
-    try while true do lines_ref := input_line chan :: !lines_ref done; [] with
-      End_of_file -> close_in chan; List.rev !lines_ref
+    try while true do lines_ref := input_line ic :: !lines_ref done; [] with
+      End_of_file -> close_in ic; List.rev !lines_ref
   in
   let i = ref 0 in
   let handle_line line =
@@ -369,7 +374,7 @@ let multi_mode () =
         i := !i + 1;
         if !show_number && not !only_one then printf "formula(%d):\n%!" !i;
         if not !only_one || !only_one && !c_ref == !i then
-          begin formula_string := line; sat_mode () end
+          begin input := String line; sat_mode () end
   in
   List.iter handle_line lines
 
@@ -411,14 +416,8 @@ let check_impl f g =
   not (check_sat neg_impl)
 
 let impl_mode () =
-  let f =
-    if !from_file then formula_of_file !formula_file
-    else formula_of_string !formula_string
-  in
-  let g =
-    if !from_file2 then formula_of_file !formula_file2
-    else formula_of_string !formula_string2
-  in
+  let f = formula_of_input !input in
+  let g = formula_of_input !input2 in
   (* check for empty exists_lists *)
   let sat = check_impl f g in
   match sat with
@@ -433,14 +432,8 @@ let impl_mode () =
       printf "does not imply\n%!"
 
 let equiv_mode () =
-  let f =
-    if !from_file then formula_of_file !formula_file
-    else formula_of_string !formula_string
-  in
-  let g =
-    if !from_file2 then formula_of_file !formula_file2
-    else formula_of_string !formula_string2
-  in
+  let f = formula_of_input !input in
+  let g = formula_of_input !input2 in
   if !verbose then
     printf "Check if\n%s\nis equivalent to\n%s\n\n%!" (hyperltl_str f)
       (hyperltl_str g);
@@ -573,10 +566,7 @@ let check_relations f =
         else printf "transitive\n%!"
 
 let relations_mode () =
-  let f =
-    if !from_file then formula_of_file !formula_file
-    else formula_of_string !formula_string
-  in
+  let f = formula_of_input !input in
   if !verbose then printf "HyperLTL formula:\n%s\n\n%!" (hyperltl_str f);
   begin match quantifier_structure f with
     ForallOnly -> ()
@@ -591,18 +581,13 @@ let print_usage = ref true
 let mode_ref = ref sat_mode
 
 let spec_list =
-  ["-f",
-   Arg.String
-     (fun f -> formula_file := f; from_file := true; print_usage := false),
+  ["-f", Arg.String (fun f -> input := File f; print_usage := false),
    "The file containing the formula to check.";
-   "-fs",
-   Arg.String
-     (fun f -> formula_string := f; from_file := false; print_usage := false),
+   "-fs", Arg.String (fun f -> input := String f; print_usage := false),
    "The formula to check.";
    "-m",
    Arg.String
-     (fun f ->
-        formula_file := f; mode_ref := multi_mode; print_usage := false),
+     (fun f -> input := File f; mode_ref := multi_mode; print_usage := false),
    "The file containing multiple formulae to check.";
    "-c", Arg.Int (fun c -> c_ref := c; only_one := true),
    "The number of the formula to check in multi mode.";
@@ -613,19 +598,13 @@ let spec_list =
    "Check with aalta.";
    "-v", Arg.Set verbose, "Be verbose.";
    "--verbose", Arg.Set verbose, "Be verbose.";
-   "-i", Arg.String (fun i -> formula_file2 := i; mode_ref := impl_mode),
+   "-i", Arg.String (fun i -> input2 := File i; mode_ref := impl_mode),
    "The file containing the formula to imply.";
-   "-is",
-   Arg.String
-     (fun i ->
-        formula_string2 := i; from_file2 := false; mode_ref := impl_mode),
+   "-is", Arg.String (fun i -> input2 := String i; mode_ref := impl_mode),
    "The formula to imply.";
-   "-e", Arg.String (fun e -> formula_file2 := e; mode_ref := equiv_mode),
+   "-e", Arg.String (fun e -> input2 := File e; mode_ref := equiv_mode),
    "The file containing the formula to equal.";
-   "-es",
-   Arg.String
-     (fun e ->
-        formula_string2 := e; from_file2 := false; mode_ref := equiv_mode),
+   "-es", Arg.String (fun e -> input2 := String e; mode_ref := equiv_mode),
    "The formula to equal.";
    "-r",
    Arg.Unit (fun () -> mode_ref := relations_mode; do_reflexive := true),
