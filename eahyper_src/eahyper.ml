@@ -270,7 +270,7 @@ let invoke_tool name cmd formula analyse_output =
   (try while true do Buffer.add_channel buf ic 1 done with End_of_file -> ());
   let status = Unix.close_process (ic, oc) in
   begin match status with
-    WEXITED 0 -> ()
+    Unix.WEXITED 0 -> ()
   | _ -> eprintf "failure calling LTL-SAT solver %s\n%!" name; exit 1
   end;
   let output = Buffer.contents buf in
