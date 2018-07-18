@@ -637,8 +637,11 @@ let arg_failure arg = raise (Arg.Bad ("Bad argument: " ^ arg))
 let usage_msg =
   "./eahyper.native ((-f formula_file|-fs formula) ([(-i formula_file|-is formula)|(-e formula_file|-es formula)] | [-r|--reflexive] [-s|--symmetric] [-t|--transitive])) | (-m formulae_file [-c n][--cv]) [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
 
+let getenv_opt var =
+  try Some (Sys.getenv "EAHYPER_SOLVER_DIR") with Not_found -> None
+
 let main =
-  begin match Sys.getenv_opt "EAHYPER_SOLVER_DIR" with
+  begin match getenv_opt "EAHYPER_SOLVER_DIR" with
     None | Some "" ->
       eprintf "EAHYPER_SOLVER_DIR environment variable was not set\n%!";
       exit 1
