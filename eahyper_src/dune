@@ -1,5 +1,6 @@
 (executable
  (name eahyper)
+ (public_name eahyper)
  (libraries str unix))
 
 (ocamllex

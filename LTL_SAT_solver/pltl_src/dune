@@ -1,3 +1,4 @@
 (executable
  (name pltl)
+ (public_name pltl)
  (libraries camlp-streams unix))
