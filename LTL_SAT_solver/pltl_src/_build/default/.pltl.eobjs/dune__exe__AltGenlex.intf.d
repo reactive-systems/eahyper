@@ -1,0 +1,1 @@
+altGenlex.mli: Stream

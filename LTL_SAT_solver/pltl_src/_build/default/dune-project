@@ -1,0 +1,11 @@
+(lang dune 2.7)
+
+(name pltl)
+
+(generate_opam_files true)
+
+(package
+ (name pltl)
+ (synopsis "A Satisfiability Solver for LTL")
+ (description "A Satisfiability Solver for LTL")
+ (depends ocaml dune unix))

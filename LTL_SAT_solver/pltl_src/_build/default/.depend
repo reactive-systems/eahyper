@@ -1,0 +1,22 @@
+PLTLFormula.cmo : hashConsing.cmi altGenlex.cmi PLTLFormula.cmi
+PLTLFormula.cmx : hashConsing.cmx altGenlex.cmx PLTLFormula.cmi
+PLTLFormula.cmi : hashConsing.cmi
+PLTLGraph.cmo : PLTLMisc.cmo PLTLFormula.cmi miscSolver.cmi PLTLGraph.cmi
+PLTLGraph.cmx : PLTLMisc.cmx PLTLFormula.cmx miscSolver.cmx PLTLGraph.cmi
+PLTLGraph.cmi : PLTLFormula.cmi
+PLTLMisc.cmo : PLTLFormula.cmi miscSolver.cmi hashConsing.cmi
+PLTLMisc.cmx : PLTLFormula.cmx miscSolver.cmx hashConsing.cmx
+PLTLTree.cmo : PLTLMisc.cmo PLTLFormula.cmi miscSolver.cmi PLTLTree.cmi
+PLTLTree.cmx : PLTLMisc.cmx PLTLFormula.cmx miscSolver.cmx PLTLTree.cmi
+PLTLTree.cmi : PLTLFormula.cmi
+altGenlex.cmo : altGenlex.cmi
+altGenlex.cmx : altGenlex.cmi
+altGenlex.cmi :
+hashConsing.cmo : hashConsing.cmi
+hashConsing.cmx : hashConsing.cmi
+hashConsing.cmi :
+miscSolver.cmo : miscSolver.cmi
+miscSolver.cmx : miscSolver.cmi
+miscSolver.cmi :
+pltl.cmo : PLTLTree.cmi PLTLGraph.cmi PLTLFormula.cmi
+pltl.cmx : PLTLTree.cmx PLTLGraph.cmx PLTLFormula.cmx

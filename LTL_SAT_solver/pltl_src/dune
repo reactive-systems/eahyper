@@ -1,0 +1,3 @@
+(executable
+ (name pltl)
+ (libraries camlp-streams unix))
