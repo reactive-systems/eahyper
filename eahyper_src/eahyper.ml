@@ -23,7 +23,7 @@ let rec get_trace_variable_lists_ f xs ys =
 let get_trace_variable_lists f = get_trace_variable_lists_ f [] []
 
 (* return list of bound/quantified trace variables of hyperltl_formula `f` *)
-let rec get_trace_variables_prefix f =
+let get_trace_variables_prefix f =
   let (xs, ys) = get_trace_variable_lists f in xs @ ys
 
 (* return list of atomic propositions of formula `f` *)
@@ -37,7 +37,7 @@ let rec get_atomic_props_ f =
       get_atomic_props_ f @ get_atomic_props_ g
 
 (* return list of atomic propositions of hyperltl_formula `f` *)
-let rec get_atomic_props f =
+let get_atomic_props f =
   let deduplicate xs =
     let cons_uniq xs x = if List.mem x xs then xs else x :: xs in
     List.rev (List.fold_left cons_uniq [] xs)
@@ -55,7 +55,7 @@ let rec get_trace_variables_body_ f =
       get_trace_variables_body_ f @ get_trace_variables_body_ g
 
 (* return list of used trace variables of hyperltl_formula `f` *)
-let rec get_trace_variables_body f =
+let get_trace_variables_body f =
   get_trace_variables_body_ (discard_prefix f)
 
 (* return list of duplicates in `xs` *)
@@ -637,7 +637,7 @@ let arg_failure arg = raise (Arg.Bad ("Bad argument: " ^ arg))
 let usage_msg =
   "./eahyper.native ((-f formula_file|-fs formula) ([(-i formula_file|-is formula)|(-e formula_file|-es formula)] | [-r|--reflexive] [-s|--symmetric] [-t|--transitive])) | (-m formulae_file [-c n][--cv]) [--aalta|--pltl] [--nnf] [-v|--verbose] [-wi file]"
 
-let getenv_opt var =
+let getenv_opt _var =
   try Some (Sys.getenv "EAHYPER_SOLVER_DIR") with Not_found -> None
 
 let main =

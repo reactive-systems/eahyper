@@ -1,0 +1,9 @@
+(executable
+ (name eahyper)
+ (libraries str unix))
+
+(ocamllex
+ (modules lexer))
+
+(menhir
+ (modules parser))
