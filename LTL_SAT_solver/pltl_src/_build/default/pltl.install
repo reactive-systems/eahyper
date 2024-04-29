@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/pltl/META"
-  "_build/install/default/lib/pltl/dune-package"
-  "_build/install/default/lib/pltl/opam"
-]
-doc: [
-  "_build/install/default/doc/pltl/README"
-]

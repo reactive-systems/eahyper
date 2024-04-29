@@ -1,4 +1,0 @@
-(lang dune 3.13)
-(name pltl)
-(sections (lib .) (doc ../../doc/pltl))
-(files (lib (META dune-package opam)) (doc (README)))
