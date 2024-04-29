@@ -1,3 +1,13 @@
 (lang dune 2.7)
 
 (using menhir 2.1)
+
+(generate_opam_files true)
+
+(name eahyper)
+
+(package
+ (name eahyper)
+ (synopsis "A Satisfiability Solver for Hyperproperties")
+ (description "A Satisfiability Solver for Hyperproperties")
+ (depends ocaml dune menhir str unix))
